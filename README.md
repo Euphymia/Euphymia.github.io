@@ -11,7 +11,7 @@
 
 ### METHINE LEARNING METHOD
 
-* [Normalization Methods](/机器学习中用到的归一化处理整理) 
+* [Normalization Methods](/机器学习中用到的归一化处理整理.md) 
 
 ### METHINE LEARNING IN MULTI-LABLE 
 
