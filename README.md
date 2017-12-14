@@ -16,9 +16,10 @@
 ### METHINE LEARNING IN MULTI-LABLE 
 
 * [Multi-lable classification review](/机器学习多标签问题综述.md)
-* [Multi-label classification with neural network(keras)](/使用神经网络处理多分类问题（keras）.md)
+* [Multi-label classification with neural network(keras)](/使用神经网络处理多分类问题.md)
 
 ### PYTHON METHODS
 
 * [Difference in append and extend](/append和extend的区别.md)
+
 
