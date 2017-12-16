@@ -21,11 +21,11 @@
 ### PYTHON METHODS
 
 * [Difference in append and extend](/append和extend的区别.md)
-* [Notes of numpy](/numpy笔记)
-* [Note of matplotlib](/matplotlib)
+* [Notes of numpy](/numpy笔记.md)
+* [Note of matplotlib](/matplotlib.md)
 
 
 ### Learning Tensorflow
 
-* [Learning note(一)](/tfnote1)
+* [Learning note(一)](/tfnote1.md)
 
