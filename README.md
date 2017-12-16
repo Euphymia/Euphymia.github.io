@@ -29,6 +29,7 @@
 ### Learning Tensorflow
 
 * [Learning note(一)](/tfnote1.md)
+* [Learning note(二)](/tfnote2.md)
 
 
 ##  *[Can't  see me](/littleprogram/programlist.md)*
