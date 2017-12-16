@@ -1,6 +1,7 @@
 # WELCOME TO MY NOTE
-## CONTENT                                                                [Can't see me](/littleprogram/programlist.md)
-### MECHINE LEARNING ALGORITHM
+## CONTENT                                   
+
+### *MECHINE LEARNING ALGORITHM*
  - [K-Nearest Neighbor](/K-近邻算法.md)
  - [ID3 DecisionTree](/ID3决策树.md)
  - [Naive Bayes](/朴素贝叶斯.md)
@@ -29,3 +30,5 @@
 
 * [Learning note(一)](/tfnote1.md)
 
+
+##  *[Can't  see me](/littleprogram/programlist.md)*
