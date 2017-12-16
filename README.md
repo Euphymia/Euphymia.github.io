@@ -1,5 +1,5 @@
 # WELCOME TO MY NOTE
-## CONTENT
+## CONTENT                                                                [Can't see me](/littleprogram/programlist.md)
 ### MECHINE LEARNING ALGORITHM
  - [K-Nearest Neighbor](/K-近邻算法.md)
  - [ID3 DecisionTree](/ID3决策树.md)
