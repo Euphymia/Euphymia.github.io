@@ -147,3 +147,19 @@ print(np.random.random_sample((2,3)))
 #>>> [[ 0.61281073  0.93650569  0.59190112]
 #     [ 0.27335348  0.16329731  0.14627115]]
 ```
+7.numpy.random.shuffle(x)
+
+Modify a sequence in-place by shuffling its contents.
+
+| Parameters: | **x** : array_likeThe array or list to be shuffled. |
+| ----------- | ---------------------------------------- |
+| Returns:    | None                                     |
+
+```python
+idx=list(range(10))
+#shuffle的返回值固定为None，所以不能直接打印返回值
+np.random.shuffle(idx)
+print(idx)
+#[5, 8, 7, 9, 3, 4, 6, 1, 0, 2]
+```
+

@@ -1,9 +1,9 @@
-# Notes of tendorflow(一)
+# TensorFlow入门
 
 ---
 
 > * 定义tensorflow 的变量
-> * run tensorflow  的两张方法
+> * run tensorflow  的两种方法
 > * tensorflow的矩阵乘法
 > * 利用placeholder在运行时传入值
 > * 实现一个超级简单的一层网络(感知器)

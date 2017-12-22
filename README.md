@@ -13,6 +13,7 @@
 ### METHINE LEARNING METHOD
 
 * [Normalization Methods](/机器学习中用到的归一化处理整理.md) 
+* [Activation Function](/Activationfunc.md)
 
 ### METHINE LEARNING IN MULTI-LABLE 
 
@@ -24,12 +25,16 @@
 * [Difference in append and extend](/append和extend的区别.md)
 * [Notes of numpy](/numpy笔记.md)
 * [Note of matplotlib](/matplotlib.md)
+* [Load data](/loaddata.md)
 
 
 ### Learning Tensorflow
 
-* [Learning note(一)](/tfnote1.md)
-* [Learning note(二)](/tfnote2.md)
+* [TensorFlow ABC](/tfnote1.md)
+* [Three level network](/tfnote2.md)
+* [Multiple classification](/tfnote3.md)
+* [convolutional neural network](/tfnote4.md)
 
 
 ##  *[Can't  see me](/littleprogram/programlist.md)*
+

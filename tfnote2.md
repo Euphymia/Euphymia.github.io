@@ -1,10 +1,10 @@
-# Learning of tensorflow(二)
+# Tensorflow实现三层神经网络
 
 ---
 
 > * 将tensorflow设置的变量保存到本地
 > * 获取本地的tensorflow变量
-> * 实现一个三层的神经网络并画出图像
+> * 实现一个三层的神经网络(回归)并画出图像
 
 ---
 
