@@ -14,6 +14,7 @@
 
 * [Normalization Methods](/机器学习中用到的归一化处理整理.md) 
 * [Activation Function](/Activationfunc.md)
+* [norm of vector and matrix](/向量矩阵范数.md)
 
 ### METHINE LEARNING IN MULTI-LABLE 
 
@@ -33,8 +34,17 @@
 * [TensorFlow ABC](/tfnote1.md)
 * [Three level network](/tfnote2.md)
 * [Multiple classification](/tfnote3.md)
-* [convolutional neural network](/tfnote4.md)
+* [Convolutional neural network](/tfnote4.md)
 
+
+## Learning OpenCV
+
+* [Loading images and vidios](/opencvnote1.md)
+
+###Nature Language Prosessing
+
+* [Split text with nltk](/nltk切分文本.md)
+* [Standardized text with nltk](/nltk标准化.md)
 
 ##  *[Can't  see me](/littleprogram/programlist.md)*
 
