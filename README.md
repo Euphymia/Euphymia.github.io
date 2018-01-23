@@ -41,11 +41,10 @@
 
 * [Loading images and vidios](/opencvnote1.md)
 
-  ###Nature Language Prosessing
+### Nature Lauguage Processing
 
-
-* [Split text with nltk](/nltk切分文本.md)
-* [Standardized text with nltk](/nltk标准化.md)
+- [Split text with nltk](/nltk切分文本.md)
+- [Standardized text with nltk](/nltk标准化.md)
 
 ##  *[Can't  see me](/littleprogram/programlist.md)*
 

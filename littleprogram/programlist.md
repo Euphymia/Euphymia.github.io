@@ -5,7 +5,7 @@
 ---
 
 > * [DrawHeart](/drawheart.md)
-> * [OpencvFaceRecognition](/opencvfacerecognition)
+> * [OpencvFaceRecognition](/opencvfacerecognition.md)
 
 ---
 
