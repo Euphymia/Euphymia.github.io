@@ -27,7 +27,7 @@
 * [Difference in append and extend](/append和extend的区别.md)
 * [Notes of numpy](/numpy笔记.md)
 * [Note of matplotlib](/matplotlib.md)
-* [Load data](/loaddata.md)
+* [Load data set](/loaddata.md) 
 
 
 ### Learning Tensorflow

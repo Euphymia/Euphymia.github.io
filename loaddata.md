@@ -1,13 +1,14 @@
-# How to load data？
+# How to load data set？
 
 ---
 
-> * python 加载数据
+> * python 加载数据集(一)
+> * python 加载数据集(二)
 > * 使用pandas加载数据(推荐)
 
 ---
 
-## python加载数据
+## python加载数据集(一)
 
 思路，先读取文件(txt，csv)，然后将以','将每行数据(每个样本)分割，获取feature的值，然后根据一行数据的长度，用for循环，将所有的数据全部变为float类型。
 
@@ -25,6 +26,27 @@ def loadDataSet():
 #将数据除最后一列全部保存到dataMat[]中
         dataMat.append(lineArr[0:-1])
 #最后一列是label值，取出保存到labelMat[]中
+        labelMat.append(lineArr[-1])
+        # i+=1
+    return dataMat,labelMat
+```
+
+## python加载数据集(二)
+
+思路，与上一种方法很相似，不过这种在数据类型转换时使用了astype(float)方法，更为简洁
+
+```python
+def loadDataSet():
+    dataMat = []; labelMat = []
+    fr = open("Tic-Tac-toe/Tic-Tac-toe.txt",'r')
+    for line in fr.readlines():  
+        lineArr = line.strip().split(',')
+        #将列表lineArr转换成numpy类型
+        lineArr=array(lineArr)
+        #使用astype()将数据类型转换成float
+        lineArr=lineArr.astype(float)
+
+        dataMat.append(lineArr[:-1])
         labelMat.append(lineArr[-1])
         # i+=1
     return dataMat,labelMat
