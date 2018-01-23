@@ -4,8 +4,8 @@
 
 ---
 
-> * [DrawHeart](/drawheart.md)
-> * [OpencvFaceRecognition](/opencvfacerecognition.md)
+> * [DrawHeart](/drawheart/drawheart.md)
+> * [Face Hanger with opencv](/opencvfacefilter/facefilter.md)
 
 ---
 

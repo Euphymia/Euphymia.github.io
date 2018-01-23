@@ -11,7 +11,7 @@
 ## 识别照片中的人脸
 
 ```python
-识别照片人脸
+#识别照片人脸
 import cv2
 #获取照片
 img = cv2.imread("a.jpg")

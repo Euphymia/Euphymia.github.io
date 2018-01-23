@@ -9,6 +9,7 @@
 ### MECHINE LEARNING IN ACTION
 
 * [Classifying spam email with naïve Bayes](/使用朴素贝叶斯方法对垃圾邮件进行分类.md)
+* [Mult label classification with svm and k-fold CrossValidation](/svm多分类及K折交叉验证.md)
 
 ### METHINE LEARNING METHOD
 
