@@ -37,11 +37,12 @@
 * [Convolutional neural network](/tfnote4.md)
 
 
-## Learning OpenCV
+###Learning OpenCV
 
 * [Loading images and vidios](/opencvnote1.md)
 
-###Nature Language Prosessing
+  ###Nature Language Prosessing
+
 
 * [Split text with nltk](/nltk切分文本.md)
 * [Standardized text with nltk](/nltk标准化.md)
