@@ -41,7 +41,7 @@
 ### Learning OpenCV
 
 * [Loading and save images and vidios](/opencvnote1.md)
-* [Face recongition with opencv](/opencvnote2.md)
+* [Face recogition with opencv](/opencvnote2.md)
 
 ### Nature Lauguage Processing
 
