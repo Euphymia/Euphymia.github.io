@@ -17,7 +17,7 @@
 
 ## 代码
 
-```pyhton
+```python
 from math import log
 import operator
 
