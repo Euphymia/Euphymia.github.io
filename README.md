@@ -2,26 +2,26 @@
 ## CONTENT                                   
 
 ### *Machine Learning Algorithm*
- - [K-Nearest Neighbor](/machinelearningalgorithm/K-近邻算法.md)
- - [ID3 DecisionTree](/machinelearningalgorithm/ID3决策树.md)
- - [Naive Bayes](/machinelearningalgorithm/朴素贝叶斯.md)
+ - [K-Nearest Neighbor](/MLalgorithm/K-近邻算法.md)
+ - [ID3 DecisionTree](/MLalgorithm/ID3决策树.md)
+ - [Naive Bayes](/MLalgorithm/朴素贝叶斯.md)
 
 ### Machine Learning In Action
 
-* [Classifying spam email with naïve Bayes](/mechinelearninginaction/使用朴素贝叶斯方法对垃圾邮件进行分类.md)
-* [Mult label classification with svm and k-fold CrossValidation](/mechinelearninginaction/svm多分类及K折交叉验证.md)
+* [Classifying spam email with naïve Bayes](/MLinaction/使用朴素贝叶斯方法对垃圾邮件进行分类.md)
+* [Mult label classification with svm and k-fold CrossValidation](/MLinaction/svm多分类及K折交叉验证.md)
 
 ### Machine Learning Methods
 
-* [Normalization Methods](/machinelearningmethods/机器学习中用到的归一化处理整理.md) 
-* [Activation Function](/machinelearningmethods/Activationfunc.md)
-* [norm of vector and matrix](/machinelearningmethods/向量矩阵范数.md)
+* [Normalization Methods](/MLmethods/机器学习中用到的归一化处理整理.md) 
+* [Activation Function](/MLmethods/Activationfunc.md)
+* [norm of vector and matrix](/MLmethods/向量矩阵范数.md)
 
 ### Machine Learning In Multi-label 
 
-* [Multi-lable classification review](/machinelearninginmultilabel/机器学习多标签问题综述.md)
-* [Multi-label classification with neural network(keras)](/machinelearninginmultilabel/使用神经网络处理多分类问题.md)
-* [Multi_label classification with SVM(sklearn)](/machinelearninginmultilabel/使用SVM处理多分类问题.md)
+* [Multi-lable classification review](/MLinmultilabel/机器学习多标签问题综述.md)
+* [Multi-label classification with neural network(keras)](/MLinmultilabel/使用神经网络处理多分类问题.md)
+* [Multi_label classification with SVM(sklearn)](/MLinmultilabel/使用SVM处理多分类问题.md)
 
 ### Python Methods
 
@@ -50,5 +50,5 @@
 - [Split text with nltk](/naturelanguageprocessing/nltk切分文本.md)
 - [Standardized text with nltk](/naturelanguageprocessing/nltk标准化.md)
 
-##  *[Can't  see me](/littleprogram/programlist.md)*
+##  *[Can't  see me](/alittleprogram/programlist.md)*
 
