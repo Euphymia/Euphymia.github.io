@@ -30,6 +30,7 @@
 * [Notes of matplotlib](/pythonmethods/matplotlib.md)
 * [Load data set](/pythonmethods/loaddata.md) 
 * [Notes of format](/pythonmethods/format的用法.md)
+* [Regular Expression](/pythonmethods/正则表达式.md)
 
 
 ### Learning Tensorflow
@@ -50,6 +51,7 @@
 - [Split text with nltk](/naturelanguageprocessing/nltk切分文本.md)
 - [Standardized text with nltk](/naturelanguageprocessing/nltk标准化.md)
 - [morphology and part of speech tagging with nltk](/naturelanguageprocessing/nltk形态学与词性标注.md)
+- [Part of speech in nltk](/naturelanguageprocessing/英语单词词性.md)
 
 ##  *[Can't  see me](/alittleprogram/programlist.md)*
 
