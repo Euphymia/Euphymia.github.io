@@ -77,7 +77,7 @@ cv2.waitKey(0)
 
 结果如下图所示：
 
-![dlibresult](C:\Users\think\Documents\GitHub\Euphymia.github.io\alittleprogram\facerecognitionpython\dlibresult.PNG)
+![dlibresult](dlibresult.PNG)
 
 ## 2.找到图片中的人脸
 
@@ -110,7 +110,7 @@ for face_location in face_locations:
 
 已将人脸单独显示出来，结果如下：
 
-![findfaceresult](C:\Users\think\Documents\GitHub\Euphymia.github.io\alittleprogram\facerecognitionpython\findfaceresult.PNG)
+![findfaceresult](findfaceresult.PNG)
 
 ## 3.画出照片中人脸的轮廓(68个点)
 
@@ -160,7 +160,7 @@ for face_landmarks in face_landmarks_list:
 
 画出的轮廓如下图所示：
 
-![lunkuoresult](C:\Users\think\Documents\GitHub\Euphymia.github.io\alittleprogram\facerecognitionpython\lunkuoresult.PNG)
+![lunkuoresult](lunkuoresult.PNG)
 
 ## 4.给图片中找到的脸化妆
 
@@ -208,7 +208,7 @@ for face_landmarks in face_landmarks_list:
 
 化妆的结果如下：
 
-![makeupresult](C:\Users\think\Documents\GitHub\Euphymia.github.io\alittleprogram\facerecognitionpython\makeupresult.PNG)
+![makeupresult](makeupresult.PNG)
 
 ## 5.识别相机中的人脸
 
@@ -310,7 +310,7 @@ cv2.destroyAllWindows()
 
 识别结果如下所示：
 
-![xuhaoresult](C:\Users\think\Documents\GitHub\Euphymia.github.io\alittleprogram\facerecognitionpython\xuhaoresult.PNG)
+![xuhaoresult](xuhaoresult.PNG)
 
 ## 6.给相机中的人脸打上高斯模糊
 
@@ -377,7 +377,7 @@ cv2.destroyAllWindows()
 
 高斯模糊结果如下所示：
 
-![blurresult](C:\Users\think\Documents\GitHub\Euphymia.github.io\alittleprogram\facerecognitionpython\blurresult.PNG)
+![blurresult](blurresult.PNG)
 
 ## 7.识别出视频中的人脸并输出保存在一个新的视频文件中
 
@@ -484,4 +484,4 @@ cv2.destroyAllWindows()
 
 结果如下所示：
 
-![vidiooutputresult](C:\Users\think\Documents\GitHub\Euphymia.github.io\alittleprogram\facerecognitionpython\vidiooutputresult.PNG)
+![vidiooutputresult](vidiooutputresult.PNG)
