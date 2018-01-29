@@ -31,6 +31,7 @@
 * [Load data set](/pythonmethods/loaddata.md) 
 * [Notes of format](/pythonmethods/format的用法.md)
 * [Regular Expression](/pythonmethods/正则表达式.md)
+* [Notes of glob and join.md](/pythonmethods/globjoinandospathjoin.md)
 
 
 ### Learning Tensorflow
