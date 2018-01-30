@@ -16,6 +16,7 @@
 * [Normalization Methods](/MLmethods/机器学习中用到的归一化处理整理.md) 
 * [Activation Function](/MLmethods/Activationfunc.md)
 * [norm of vector and matrix](/MLmethods/向量矩阵范数.md)
+* [Sklearn methods](/MLmethods/Sklearnmethods.md)
 
 ### Machine Learning In Multi-label 
 
@@ -31,7 +32,7 @@
 * [Load data set](/pythonmethods/loaddata.md) 
 * [Notes of format](/pythonmethods/format的用法.md)
 * [Regular Expression](/pythonmethods/正则表达式.md)
-* [Notes of glob and join](/pythonmethods/globjoinandospathjoin.md)
+* [Notes of glob and os.path.join/splitext](/pythonmethods/globjoin和ospathjoinsplit.md)
 
 
 ### Learning Tensorflow
@@ -46,6 +47,7 @@
 
 * [Loading and save images and vidios](/learningopencv/opencvnote1.md)
 * [Face recogition with opencv](/learningopencv/opencvnote2.md)
+* [Opencv methods](/learningopencv/opencvmethods.md)
 
 ### Nature Lauguage Processing
 

@@ -9,6 +9,7 @@
 > * np.linspace()
 > * np.newaxis()
 > * np.random()
+> * np.expand_dims()
 
 ---
 
@@ -163,3 +164,10 @@ print(idx)
 #[5, 8, 7, 9, 3, 4, 6, 1, 0, 2]
 ```
 
+## np.expand_dims()
+
+expand_dims(a, axis)就是在axis的那一个轴上把数据加上去，这个数据在axis这个轴的0位置。 
+
+例如原本为一维的2个数据，axis=0，则shape变为(1,2),axis=1则shape变为(2,1) 
+
+再例如 原本为 (2,3),axis=0，则shape变为(1,2,3),axis=1则shape变为(2,1,3)
