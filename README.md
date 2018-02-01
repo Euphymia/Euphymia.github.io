@@ -2,9 +2,9 @@
 ## CONTENT                                   
 
 ### *Machine Learning Algorithm*
- - [K-Nearest Neighbor](/MLalgorithm/K-近邻算法.md)
- - [ID3 DecisionTree](/MLalgorithm/ID3决策树.md)
  - [Naive Bayes](/MLalgorithm/朴素贝叶斯.md)
+ - [ID3 DecisionTree](/MLalgorithm/ID3决策树.md)
+ - [K-Nearest Neighbor](/MLalgorithm/K-近邻算法.md)
 
 ### Machine Learning In Action
 
@@ -13,25 +13,26 @@
 
 ### Machine Learning Methods
 
-* [Normalization Methods](/MLmethods/机器学习中用到的归一化处理整理.md) 
-* [Activation Function](/MLmethods/Activationfunc.md)
-* [norm of vector and matrix](/MLmethods/向量矩阵范数.md)
 * [Sklearn methods](/MLmethods/Sklearnmethods.md)
+* [Activation Function](/MLmethods/Activationfunc.md)
+* [Normalization Methods](/MLmethods/机器学习中用到的归一化处理整理.md) 
+* [norm of vector and matrix](/MLmethods/向量矩阵范数.md)
 
 ### Machine Learning In Multi-label 
 
 * [Multi-lable classification review](/MLinmultilabel/机器学习多标签问题综述.md)
-* [Multi-label classification with neural network(keras)](/MLinmultilabel/使用神经网络处理多分类问题.md)
 * [Multi_label classification with SVM(sklearn)](/MLinmultilabel/使用SVM处理多分类问题.md)
+* [Multi-label classification with neural network(keras)](/MLinmultilabel/使用神经网络处理多分类问题.md)
 
 ### Python Methods
 
-* [Difference in append and extend](/pythonmethods/append和extend的区别.md)
-* [Notes of numpy](/pythonmethods/numpy笔记.md)
-* [Notes of matplotlib](/pythonmethods/matplotlib.md)
 * [Load data set](/pythonmethods/loaddata.md) 
 * [Notes of format](/pythonmethods/format的用法.md)
+* [Notes of numpy](/pythonmethods/numpy笔记.md)
+* [Notes of pygame](/pythonmethods/pygamemethods.md)
 * [Regular Expression](/pythonmethods/正则表达式.md)
+* [Notes of matplotlib](/pythonmethods/matplotlib.md)
+* [Difference in append and extend](/pythonmethods/append和extend的区别.md)
 * [Notes of glob and os.path.join/splitext](/pythonmethods/globjoin和ospathjoinsplit.md)
 
 
@@ -45,16 +46,16 @@
 
 ### Learning OpenCV
 
-* [Loading and save images and vidios](/learningopencv/opencvnote1.md)
-* [Face recogition with opencv](/learningopencv/opencvnote2.md)
 * [Opencv methods](/learningopencv/opencvmethods.md)
+* [Face recogition with opencv](/learningopencv/opencvnote2.md)
+* [Loading and save images and vidios](/learningopencv/opencvnote1.md)
 
 ### Nature Lauguage Processing
 
 - [Split text with nltk](/naturelanguageprocessing/nltk切分文本.md)
+- [Part of speech in nltk](/naturelanguageprocessing/英语单词词性.md)
 - [Standardized text with nltk](/naturelanguageprocessing/nltk标准化.md)
 - [morphology and part of speech tagging with nltk](/naturelanguageprocessing/nltk形态学与词性标注.md)
-- [Part of speech in nltk](/naturelanguageprocessing/英语单词词性.md)
 
 ##  *[Can't  see me](/alittleprogram/programlist.md)*
 
