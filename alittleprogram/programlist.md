@@ -10,6 +10,7 @@
 > * [Million hero master with python](/millionhero-master/millionheromaster.md)
 > * [Captcha recognition with python](/captcharecognitionwithpython/captcharecognitionwithpython.md)
 > * [Flappybird-qlearning with python](/flappybirdqlearning/flappybirdqlearning.md)
+> * [Identify the answer card with python](/identifyanswercardwithpython/identifyanswercard.md)
 
 ---
 
