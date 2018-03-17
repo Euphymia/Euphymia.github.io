@@ -164,6 +164,17 @@ print(idx)
 #[5, 8, 7, 9, 3, 4, 6, 1, 0, 2]
 ```
 
+8.numpy.random.permutation(x)
+
+获取一个一定长度的乱序，输入是一个序列的长度，与numpy.random.shuffle(x)不同，shuffle的输入是一个np数组。
+
+```python
+np.random.permutation(10)
+array([1, 7, 4, 3, 0, 9, 2, 5, 8, 6])
+```
+
+
+
 ## np.expand_dims()
 
 expand_dims(a, axis)就是在axis的那一个轴上把数据加上去，这个数据在axis这个轴的0位置。 
