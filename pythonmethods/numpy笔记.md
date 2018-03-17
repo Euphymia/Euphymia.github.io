@@ -166,7 +166,7 @@ print(idx)
 
 8.numpy.random.permutation(x)
 
-获取一个一定长度的乱序，输入是一个序列的长度，与numpy.random.shuffle(x)不同，shuffle的输入是一个np数组。
+获取一个一定长度的乱序，输入是一个序列的长度，与numpy.random.shuffle(x)不一样，shuffle的输入是一个np数组。
 
 ```python
 np.random.permutation(10)
