@@ -59,7 +59,7 @@
 
 
 
-## *[LeetCode](/codetraining/problemlist.md)*
+## *[Code Training](/codetraining/problemlist.md)*
 
 ##  *[Can't  see me](/alittleprogram/programlist.md)*
 
