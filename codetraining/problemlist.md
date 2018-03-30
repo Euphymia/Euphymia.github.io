@@ -24,6 +24,10 @@
 
 21 [Merge_Two_Sorted_Lists](/21_Merge_Two_Sorted_Lists.md)
 
+### Number
+
+70 [Climbing Stairs](/70_Climbing_Stairs.md)
+
 ###Other
 
 56 [Merge Intervals](/56_Merge_Intervals.md)
