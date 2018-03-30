@@ -18,6 +18,8 @@
 
 28 [Implement strStr()(KMP).md](/28_Implement_strStr()(KMP).md)
 
+65 [Valid_Number](/65_Valid_Number.md)
+
 ###List
 
 21 [Merge_Two_Sorted_Lists](/21_Merge_Two_Sorted_Lists.md)
