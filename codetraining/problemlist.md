@@ -16,11 +16,11 @@
 
 20 [valid_parentheses](/20_valid_parentheses.md)
 
-28 [Implement strStr()(KMP).md](/28_Implement_strStr()(KMP).md)
+28 [Implement strStr()(KMP)](/28_Implement_strStr()(KMP).md)
 
 65 [Valid_Number](/65_Valid_Number.md)
 
-###List
+###list
 
 21 [Merge_Two_Sorted_Lists](/21_Merge_Two_Sorted_Lists.md)
 
@@ -32,4 +32,4 @@
 
 56 [Merge Intervals](/56_Merge_Intervals.md)
 
-57 [Insert Interval](/57_Insert_Interval)
+57 [Insert Interval](/57_Insert_Interval.md)
