@@ -25,3 +25,5 @@
 ###Other
 
 56 [Merge Intervals](/56_Merge_Intervals.md)
+
+57 [Insert Interval](/57_Insert_Interval)

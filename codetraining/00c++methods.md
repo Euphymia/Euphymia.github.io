@@ -163,11 +163,7 @@ vector的使用：**
 
 在c++ 中，vector是一个十分有用的容器。
 
-作用：它能够像容器一样存放各种类型的对象，简单地说，vector是一个能够存放任意类型的动态数组，能够增加和压缩数据。
-
-vector在C++ 标准模板库中的部分内容，它是一个多功能的，能够操作多种数据结构和算法的模板类和函数库。
-
-特别注意：
+作用：它能够像容器一样存放各种类型的对象，简单地说，vector是一个能够存放任意类型的动态数组，能够增加和压缩数据。vector在C++ 标准模板库中的部分内容，它是一个多功能的，能够操作多种数据结构和算法的模板类和函数库。特别注意：
 
 使用vector需要注意以下几点：
 
@@ -175,13 +171,7 @@ vector在C++ 标准模板库中的部分内容，它是一个多功能的，能�
 
 2、Vector作为函数的参数或者返回值时，需要注意它的写法：
 
-double
-
-Distance(vector<int> &a, vector<int> &b) 其中的“&”绝对不能少！！！
-
-实例：vector<int> test;
-
-//建立一个vector，int为数组元素的数据类型，test为动态数组名
+double Distance(vector<int> &a, vector<int> &b) 其中的“&”绝对不能少！！！
 
 简单的使用方法如下：
 
@@ -199,31 +189,22 @@ points[0].size(); //指第一行的列数
 
 1 、基本操作
 
-(1) 头文件 #include<vector>
-
-(2)创建vector对象，vector<int> vec;
-
-(3) 尾部插入数字：vec.push_back(a);
-
-(4) 使用下标访问元素，cout << vec[0] << endl;记住下标是从0开始的。
-
-(5)使用迭代器访问元素.
-
-vector<int>::iterator it;
-
-for (it = vec.begin(); it != vec.end(); it++)
-
-​    cout << *it << endl;
-
-(6) 插入元素： vec.insert(vec.begin() + i, a);在第i + 1个元素前面插入a;
-
-(7) 删除元素： vec.erase(vec.begin() + 2);删除第3个元素vec.erase(vec.begin() + i, vec.end() + j);
-
-删除区间[i, j - 1];区间从0开始
-
-(8) 向量大小 : vec.size();
-
-(9) 清空 : vec.clear();
+1. vec.begin()//指向迭代器中第一个元素。   
+2. vec.end()//指向迭代器中末端元素的下一个，指向一个不存在元素。          
+3. vec.push_back(elem)     //在尾部加入一个数据。  
+4. vec.pop_back()          //删除最后一个数据。  
+5. vec.capacity()  //vector可用空间的大小。  
+6. vec.size()//返回容器中数据个数。  
+7. vec.empty() //判断容器是否为空。  
+8. vec.front()     //传回第一个数据。  
+9. vec.back()  //传回最后一个数据，不检查这个数据是否存在。  
+10. vec.at(index)   //传回索引idx所指的数据，如果idx越界，抛出out_of_range。  
+11. vec.clear() //移除容器中所有数据。  
+12. vec.erase(iterator) //删除pos位置的数据，传回下一个数据的位置。  
+13. vec.erase(begin,end)    //删除[beg,end)区间的数据，传回下一个数据的位置。注意：begin和end为iterator  
+14. vec.insert(position,elem)   //在pos位置插入一个elem拷贝，传回新数据位置。  
+15. vec.insert(position,n,elem) //在pos位置插入n个elem数据，无返回值。  
+16. vec.insert(position,begin,end)  //在pos位置插入在[beg,end)区间的数据，无返回值。  
 
 ### stack的使用方法
 
