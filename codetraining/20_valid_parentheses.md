@@ -35,6 +35,8 @@ class Solution
             while(s[i]=='{'||s[i]=='['||s[i]=='(')
                 // 栈通过push()函数在栈顶添加元素
                 parentheses.push(s[i++]);
+            if (i==s.size())
+                return false;
             if (parentheses.empty())
                 return false;
             if (s[i] == ')' && parentheses.top() != '(')
@@ -50,7 +52,7 @@ class Solution
 };
 int main(){
     Solution sl;
-    string str="[([{}])]";
+    string str="[()]";
     bool res;
     res=sl.isValid(str);
     cout<<res<<endl;

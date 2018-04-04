@@ -36,114 +36,65 @@ atoi的要求：
 using namespace std;
 class Solution{
     public:
-        int myAtoi(string str){#include<iostream>
-#include<string>
-#include<limits.h>
-
-using namespace std;
-class Solution{
-    public:
         int myAtoi(string str){
             // loc:当前扫描到的字符位置 n:字符串长度 sign：数字正负的记号
-            int loc=0,n=str.length(),sign=1;
+            int loc = 0, n = str.length(), sign = 1;
             // 最终扫描的结果，定义为最长的long
-            long result=0l;
+            long result = 0l;
             // 记录当前数字的长度
-            int numlength=1;
-            if(str.empty()){
+            int numlength = 1;
+            if (str.empty())
+            {
                 return 0;
             }
-            if(str[loc]!=' '&&str[loc]-'0'<10){
-                return 0;
-            }
-            while(loc<n&&str[loc]==' ')
+            // if(str[loc]!=' '||str[loc]-'0'<10){
+            //     return 0;
+            // }
+            while (loc < n && str[loc] == ' ')
                 loc++;
-            if(loc==str.length())
+            if (loc == str.length())
                 return 0;
-            if(str[loc]=='-'||str[loc]=='+'){
-                sign=(str[loc++]=='-')? -1:1;
+            if (str[loc] == '-' || str[loc] == '+')
+            {
+                sign = (str[loc++] == '-') ? -1 : 1;
             }
-            while(loc<n&&str[loc]>'0'&&str[loc]<'9'){
-                result=result*10+(str[loc++]-'0');
+            while (loc < n && '0'<=str[loc]&& str[loc]<='9')
+            {
+                result = result * 10 + (str[loc++] - '0');
                 numlength++;
             }
-            numlength-=1;
-            cout<<numlength;
-            if(numlength>10){
+            numlength -= 1;
+            if (numlength > 10)
+            {
                 return sign == -1 ? INT_MIN : INT_MAX;
             }
-            if(numlength==10){
-                if(sign==1){
-                    if(2000000000l<result&&result<INT_MAX){
-                        return result*sign;
+            if (numlength == 10 && result>=INT_MAX)
+            {
+                if (sign == 1)
+                {
+                    if (result < INT_MAX)
+                    {
+                        return result * sign;
                     }
-                    else{
+                    else
+                    {
                         return INT_MAX;
-                    }  
+                    }
                 }
-                else{
-                    if (2000000000l < result && result < INT_MAX)
-                        return result*sign;
-                    else 
+                else
+                {
+                    if (result-1 < INT_MAX)
+                        return result * sign;
+                    else
                         return INT_MIN;
                 }
             }
-            return result*sign;
+            return result * sign;
         }
 };
 int main(){
     Solution sl;
-    cout<<sl.myAtoi("  3234324324");
-    getchar();
-    return 0;
-}
-            int loc=0,n=str.length(),sign=1;
-            long result=0l;
-            int numlength=1;
-            if(str.empty()){
-                return 0;
-            }
-            if(str[loc]!=' '&&str[loc]-'0'<10){
-                return 0;
-            }
-            while(loc<n&&str[loc]==' ')
-                loc++;
-            if(loc==str.length())
-                return 0;
-            if(str[loc]=='-'||str[loc]=='+'){
-                sign=(str[loc++]=='-')? -1:1;
-            }
-            while(loc<n&&str[loc]>'0'&&str[loc]<'9'){
-                result=result*10+(str[loc++]-'0');
-                numlength++;
-            }
-            numlength-=1;
-            cout<<numlength;
-            if(numlength>10){
-                return sign == -1 ? INT_MIN : INT_MAX;
-            }
-            if(numlength==10){
-                if(sign==1){
-                    if(2000000000l<result&&result<INT_MAX){
-                        return result*sign;
-                    }
-                    else{
-                        return INT_MAX;
-                    }  
-                }
-                else{
-                    if (2000000000l < result && result < INT_MAX)
-                        return result*sign;
-                    else 
-                        return INT_MIN;
-                }
-            }
-            return result*sign;
-        }
-};
-int main(){
-    Solution sl;
-    cout<<sl.myAtoi("  3234324324");
+    cout << sl.myAtoi("-2147483647");
     getchar();
     return 0;
 }

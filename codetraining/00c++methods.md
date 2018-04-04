@@ -4,12 +4,14 @@
 
 > * 万能头文件
 > * 链表的一些操作
+> * 树的一些操作
 > * memset()函数
 > * sort()函数
 > * max()函数
 > * map的使用方法
 > * vector的使用方法
 > * stack的使用方法
+> * 无视大小写判断字母是否相等的方法
 
 ---
 
@@ -19,19 +21,20 @@ include <bits/stdc++.h>
 
 ###链表的一些操作
 
-c++ 中生成链表的操作：
+```c++
+// c++ 中生成链表的操作：
 
-构建链表节点结构体 
+// 构建链表节点结构体 
 
 struct ListNode
 
 {
 
-​    int val;
+    int val;
 
-​    ListNode *next;
+    ListNode *next;
 
-​    ListNode(int x) : val(x), next(NULL) {}
+    ListNode(int x) : val(x), next(NULL) {}
 
 };
 
@@ -41,23 +44,23 @@ void createList(ListNode *pHead)
 
 {
 
-​    ListNode *p = pHead;
+    ListNode *p = pHead;
 
-​    for (int i = 1; i < 10; ++i)
+    for (int i = 1; i < 10; ++i)
 
-​    {
+    {
 
-​        ListNode *pNewNode = new ListNode(-1);
+        ListNode *pNewNode = new ListNode(-1);
 
-​        pNewNode->val = i; // 将新节点的值赋值为i
+        pNewNode->val = i; // 将新节点的值赋值为i
 
-​        pNewNode->next = NULL;
+        pNewNode->next = NULL;
 
-​        p->next = pNewNode; // 上一个节点指向这个新建立的节点
+        p->next = pNewNode; // 上一个节点指向这个新建立的节点
 
-​        p = pNewNode;       // p节点指向这个新的节点
+        p = pNewNode;       // p节点指向这个新的节点
 
-​    }
+    }
 
 }
 
@@ -67,19 +70,44 @@ void printList(ListNode *pHead)
 
 {
 
-​    ListNode *m = pHead->next;
+    ListNode *m = pHead->next;
 
-​    do
+    do
 
-​    {
+    {
 
-​        cout << m->val << endl;
+        cout << m->val << endl;
 
-​        m = m->next;
+        m = m->next;
 
-​    } while (m);
+    } while (m);
 
 }
+```
+
+### 树的一些操作
+
+```c++
+定义树节点：
+struct TreeNode
+{
+    int val;    
+    TreeNode *left;
+    TreeNode *right;
+    TreeNode(int x) : val(x), left(NULL), right(NULL){};
+};
+ // 建立一个二叉搜索树
+    TreeNode *t1=new TreeNode(8);
+    TreeNode *t=t1;
+    int j=0;
+    int nums[]={3,15,1,5,0,2};
+    for(int i=0;i<3;i++){
+        TreeNode *t2=new TreeNode(nums[j++]);
+        t1->left=t2;
+        TreeNode *t3=new TreeNode(nums[j++]);
+        t1->right=t3;
+        t1=t1->left;
+```
 
 ### memset()函数
 
@@ -137,13 +165,15 @@ sort(a, a + 10, complare); //在这里就不需要
 
 ### max()函数
 
-max()函数的使用方法：
+```c++
+// max()函数的使用方法：
 
 int a=0;
 
 a=max(3,8);
 
 cout<<a;   // a=8
+```
 
 ### map的使用方法
 
@@ -159,13 +189,13 @@ std::map对应的数据结构是红黑树。红黑树是一种近似于平衡的
 
 ### vector的使用方法
 
-vector的使用：**
+vector的使用：
 
 在c++ 中，vector是一个十分有用的容器。
 
 作用：它能够像容器一样存放各种类型的对象，简单地说，vector是一个能够存放任意类型的动态数组，能够增加和压缩数据。vector在C++ 标准模板库中的部分内容，它是一个多功能的，能够操作多种数据结构和算法的模板类和函数库。特别注意：
 
-使用vector需要注意以下几点：
+**使用vector需要注意以下几点**：
 
 1、如果你要表示的向量长度较长（需要为向量内部保存很多数），容易导致内存泄漏，而且效率会很低；
 
@@ -187,7 +217,7 @@ vector<vector<Point2f>> points; //定义一个二维数组
 
 points[0].size(); //指第一行的列数
 
-1 、基本操作
+**1 、基本操作**
 
 1. vec.begin()//指向迭代器中第一个元素。   
 2. vec.end()//指向迭代器中末端元素的下一个，指向一个不存在元素。          
@@ -206,11 +236,33 @@ points[0].size(); //指第一行的列数
 15. vec.insert(position,n,elem) //在pos位置插入n个elem数据，无返回值。  
 16. vec.insert(position,begin,end)  //在pos位置插入在[beg,end)区间的数据，无返回值。  
 
+**vector的几种初始化方法：**
+
+```c++
+//初始化一个size为0的vector
+vector<int> abc;
+//初始化size,但每个元素值为默认值
+vector<int> abc(10);    //初始化了10个默认值为0的元素
+//初始化size,并且设置初始值
+vector<int> cde(10，1);    //初始化了10个值为1的元素
+int a[5] = {1,2,3,4,5};
+//通过数组a的地址初始化，注意地址是从0到5（左闭右开区间）
+vector<int> b(a, a+5);
+vector<int> a(5,1);
+//通过a初始化
+vector<int> b(a);
+//insert初始化方式将同类型的迭代器对应的始末区间（左闭右开区间）内的值插入到vector中
+vector<int> a(6,6);
+vecot<int> b;
+//将a[0]~a[2]插入到b中，b.size()由0变为3
+b.insert(b.begin(), a.begin(), a.begin() + 3);
+```
+
 ### stack的使用方法
 
 \#include <stack>
 
-stack的用法
+**stack的用法**
 
 stack通过容器适配器来实现，是一种将特定的容器类作为其最底层的容器的类，它提供了一些特定的成员函数来访问自己的元素，元素只能在这个特定容器的后面，也就是栈的顶部，进行出栈和入栈操作。
 
@@ -225,3 +277,10 @@ back （返回栈顶元素）
 push （入栈）
 
 pop （出栈）
+
+### 无视大小写判断字母是否相等的方法
+
+```c++
+char ch1='A',ch2='a';
+if((ch1+32-'a')%32!=(ch2+32-'a')%32) return false;
+```
