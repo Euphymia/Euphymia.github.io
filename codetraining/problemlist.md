@@ -18,6 +18,10 @@
 
 8   [String to Integer (atoi)](/8_String_To_Integer.md)
 
+12 [Integer to Roman](/12_Integer_to_Roman.md)
+
+13 [Roman to Integer](/13_Roman_to_Integer.md)
+
 20 [valid_parentheses](/20_valid_parentheses.md)
 
 28 [Implement strStr()(KMP)](/28_Implement_strStr()(KMP).md)
@@ -29,6 +33,8 @@
 127 [Word Ladder](/127_Word_Ladder.md)
 
 ###list
+
+2 [Add Two Numbers](/2_Add_Two_Numbers.md)
 
 21 [Merge_Two_Sorted_Lists](/21_Merge_Two_Sorted_Lists.md)
 
