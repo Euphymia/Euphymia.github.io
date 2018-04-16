@@ -8,6 +8,9 @@
 > * memset()函数
 > * sort()函数
 > * max()函数
+> * auto的用法
+> * ? :运算符的用法
+> * for循环的五种用法
 > * map的使用方法
 > * vector的使用方法
 > * stack的使用方法
@@ -173,6 +176,93 @@ int a=0;
 a=max(3,8);
 
 cout<<a;   // a=8
+```
+
+### auto的用法
+
+C++ 11 auto
+
+auto可以在声明变量的时候根据变量初始值的类型自动为此变量选择匹配的类型，类似的关键字还有decltype。举个例子：
+
+```c++
+int a = 10;
+
+auto au_a = a; //自动类型推断，au_a为int类型
+
+cout << typeid(au_a).name() << endl;
+
+typeid运算符可以输出变量的类型。程序的运行结果输出了
+
+>>>int
+```
+
+### ? :运算符的用法
+
+在某些情况下，可以用条件运算符“ ?: ”来简化if语句。 基本格式
+
+“?: ”是一个三元运算符，其构成的表达式格式为：<表达式1> ? <表达式2> : <表达式3> 
+
+例如： 
+
+```c++
+
+if (a > b) max = a;
+
+else max = b;
+
+可写成：
+
+max = a > b ? a : b;
+
+或者
+
+return a>b? a:b;
+```
+
+### for循环的五种用法
+
+```c++
+#include <algorithm>
+#include <vector>
+    //////////////////////////////////////////////
+    int nArray[] = {0, 1, 2, 3, 4, 5};
+std::vector<int> vecNum(nArray, nArray + 6);
+CString strText;
+// 第一种用法：最原始的语法(用下标)
+for (size_t i = 0; i < vecNum.size(); ++i)
+{
+    strText.Format("%d", nArray[i]);
+    AfxMessageBox(strText);
+}
+
+// 第二种用法：最原始的语法(用迭代器)
+for (auto it = vecNum.begin(); it != vecNum.end(); ++it)
+{
+    strText.Format("%d", *it);
+    AfxMessageBox(strText);
+}
+
+// 第三种用法：简化数组遍历语法(从vs2008开始支持)
+for
+    each(auto item in vecNum)
+    {
+        strText.Format("%d", item);
+        AfxMessageBox(strText);
+    }
+
+// 第四种用法：STL函数
+std::for_each(vecNum.begin(), vecNum.end(), [](int item) {
+    CString strText;
+    strText.Format("%d", item);
+    AfxMessageBox(strText);
+});
+
+// 第五种用法：C++11新增加的(VS2012支持)
+for (auto item : vecNum)
+{
+    strText.Format("%d", item);
+    AfxMessageBox(strText);
+}
 ```
 
 ### map的使用方法
