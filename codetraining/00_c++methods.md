@@ -14,6 +14,7 @@
 > * map的使用方法
 > * vector的使用方法
 > * stack的使用方法
+> * 队列的使用方法
 > * 无视大小写判断字母是否相等的方法
 
 ---
@@ -99,17 +100,35 @@ struct TreeNode
     TreeNode *right;
     TreeNode(int x) : val(x), left(NULL), right(NULL){};
 };
- // 建立一个二叉搜索树
-    TreeNode *t1=new TreeNode(8);
-    TreeNode *t=t1;
-    int j=0;
-    int nums[]={3,15,1,5,0,2};
-    for(int i=0;i<3;i++){
-        TreeNode *t2=new TreeNode(nums[j++]);
-        t1->left=t2;
-        TreeNode *t3=new TreeNode(nums[j++]);
-        t1->right=t3;
-        t1=t1->left;
+// 自动创建二叉树，二叉树长度为n，当NodeID大于n时结束。
+// 当遇到'0'字符时，返回空指针，所以可以用'0'，控制数的形状，否则数一直沿左子树增长。
+BiNode *CreateBiTree(char c[], int n)
+{
+    BiNode *T;
+    NodeID++;
+    if (NodeID > n)
+    {
+        return (NULL);
+    }
+    if (c[NodeID] == '0')
+    {
+        return (NULL);
+    }
+    T = new BiNode;
+    T->data = c[NodeID];
+    T->lchild = CreateBiTree(c, n);
+    T->rchild = CreateBiTree(c, n);
+    return (T);
+}
+int main()
+{
+    int i, SampleNum=10;
+    char c[100]={'v','a','b','d','0','0','e','0','0','c','f'};
+    NodeID = 0;
+    BiTree = CreateBiTree(c, SampleNum);
+    getchar();
+    return 0;
+}
 ```
 
 ### memset()函数
@@ -367,6 +386,22 @@ back （返回栈顶元素）
 push （入栈）
 
 pop （出栈）
+
+### 队列的使用方法
+
+queue 的基本操作举例如下：
+
+queue入队，如例：q.push(x); 将x 接到队列的末端。
+
+queue出队，如例：q.pop(); 弹出队列的第一个元素，注意，并不会返回被弹出元素的值。
+
+访问queue队首元素，如例：q.front()，即最早被压入队列的元素。
+
+访问queue队尾元素，如例：q.back()，即最后被压入队列的元素。
+
+判断queue队列空，如例：q.empty()，当队列空时，返回true。
+
+访问队列中的元素个数，如例：q.size()
 
 ### 无视大小写判断字母是否相等的方法
 

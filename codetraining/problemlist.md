@@ -1,6 +1,6 @@
 # LeetCode Problem List
 
-###[Summary Of C++ Methods](/00c++methods.md)
+###[Summary Of C++ Methods](/00_c++methods.md)
 
 ### Array
 
@@ -22,7 +22,7 @@
 
 ### String
 
-01 [manacher](/01manacher.md)
+01 [manacher](/01_manacher.md)
 
 8   [String to Integer (atoi)](/8_String_To_Integer.md)
 
@@ -48,6 +48,8 @@
 
 127 [Word Ladder](/127_Word_Ladder.md)
 
+131 [Palindrome Partitioning](/131_Palindrome_Partitioning.md)
+
 ###list
 
 2 [Add Two Numbers](/2_Add_Two_Numbers.md)
@@ -58,7 +60,13 @@
 
 ### Tree
 
+02 [Binary Tree Traverse With Recursion](/02_Binary_Tree_Traverse_With_Recursion.md)
+
 98 [Validate Binary Search Tree](/98_Validate_Binary_Search_Tree.md)
+
+102 [Binary Tree Level Order Traversal](/102_Binary_Tree_Level_Order_Traversal.md)
+
+129 [Sum Root to Leaf Numbers](/129_Sum_Root_to_Leaf_Numbers.md)
 
 ### Number
 
