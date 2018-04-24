@@ -24,7 +24,13 @@
 
 01 [manacher](/01_manacher.md)
 
+3 [Longest Substring Without Repeating Characters](/3_Longest_Substring_Without_Repeating_Characters.md)
+
+5 [Longest Palindromic Substring](/5_Longest_Palindromic_Substring.md)
+
 8   [String to Integer (atoi)](/8_String_To_Integer.md)
+
+10 [Regular Expression Matching](/10_Regular_Expression_Matching.md)
 
 12 [Integer to Roman](/12_Integer_to_Roman.md)
 
@@ -69,6 +75,10 @@
 129 [Sum Root to Leaf Numbers](/129_Sum_Root_to_Leaf_Numbers.md)
 
 ### Number
+
+7 [Reverse Integer](/7_Reverse_Integer.md)
+
+9 [Palindrome_Number](/9_Palindrome_Number.md)
 
 70 [Climbing Stairs](/70_Climbing_Stairs.md)
 
