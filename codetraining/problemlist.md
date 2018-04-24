@@ -36,11 +36,15 @@
 
 13 [Roman to Integer](/13_Roman_to_Integer.md)
 
+14 [Longest Common Prefix](/14_Longest_Common_Prefix.md)
+
 20 [valid_parentheses](/20_valid_parentheses.md)
 
 22 [Generate Parentheses](/22_Generate_Parentheses.md)
 
 28 [Implement strStr()(KMP)](/28_Implement_strStr()(KMP).md)
+
+30 [Substring with Concatenation of All Words](/30_Substring_with_Concatenation_of_All_Words.md)
 
 65 [Valid_Number](/65_Valid_Number.md)
 
@@ -79,6 +83,8 @@
 7 [Reverse Integer](/7_Reverse_Integer.md)
 
 9 [Palindrome_Number](/9_Palindrome_Number.md)
+
+11 [Container With Most Water](/11_Container_With_Most_Water.md)
 
 70 [Climbing Stairs](/70_Climbing_Stairs.md)
 
