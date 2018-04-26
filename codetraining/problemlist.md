@@ -10,6 +10,8 @@
 
 27 [Remove Element](/27_Remove_Element.md)
 
+31 [Next Permutation](/31_Next_Permutation.md)
+
 46 [Permutations](/46_Permutations.md)
 
 49 [Group Anagrams](/49_Group_Anagrams.md)
@@ -64,6 +66,8 @@
 
 2 [Add Two Numbers](/2_Add_Two_Numbers.md)
 
+19 [Remove Nth Node From End of List](/19_Remove_Nth_Node_From_End_of_List.md)
+
 21 [Merge_Two_Sorted_Lists](/21_Merge_Two_Sorted_Lists.md)
 
 23 [Merge k Sorted Lists](/23_Merge_k_Sorted_Lists.md)
@@ -85,6 +89,10 @@
 9 [Palindrome_Number](/9_Palindrome_Number.md)
 
 11 [Container With Most Water](/11_Container_With_Most_Water.md)
+
+17 [Letter Combinations of a Phone Number](/17_Letter_Combinations_of_a_Phone_Number.md)
+
+29 [Divide Two Integers](/29_Divide_Two_Integers.md)
 
 70 [Climbing Stairs](/70_Climbing_Stairs.md)
 

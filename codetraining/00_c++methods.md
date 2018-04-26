@@ -9,6 +9,7 @@
 > * substr()函数
 > * sort()函数
 > * max()函数
+> * C\C++ 中的绝对值函数
 > * auto的用法
 > * ? :运算符的用法
 > * for循环的五种用法
@@ -208,6 +209,21 @@ int a=0;
 a=max(3,8);
 
 cout<<a;   // a=8
+```
+
+### C\C++ 中的绝对值函数
+
+```c++
+abs()、cabs()、fabs()、labs()
+不同类型的数据使用不同类型的绝对值函数：
+整型：
+int abs(int i)  //返回整型参数i的绝对值 
+复数：
+double cabs(struct complex znum)  //返回复数znum的绝对值  
+双精度浮点型：
+double fabs(double x)  //返回双精度参数x的绝对值    
+长整型：
+long labs(long n)  //返回长整型参数n的绝对值
 ```
 
 ### auto的用法
@@ -549,6 +565,8 @@ empty（判断是否为空）
 size （返回栈的元素个数）
 
 back （返回栈顶元素）
+
+top   ( 访问栈顶 )
 
 push （入栈）
 
