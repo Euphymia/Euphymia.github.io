@@ -2,6 +2,8 @@
 
 ###[Summary Of C++ Methods](/00_c++methods.md)
 
+###[Summary Of Python Methods](/00_python_methods.md)
+
 ### Array
 
 1 [Two Sum](/1_Two_Sum.md)
@@ -11,6 +13,20 @@
 27 [Remove Element](/27_Remove_Element.md)
 
 31 [Next Permutation](/31_Next_Permutation.md)
+
+33 [Search in Rotated Sorted Array](/33_Search_in_Rotated_Sorted_Array.md)
+
+34 [Search for a Range](/34_Search_for_a_Range.md)
+
+35 [Search Insert Position](/35_Search_Insert_Position.md)
+
+36 [Valid Sudoku](/36_Valid_Sudoku.md)
+
+37 [Sudoku Solver](/37_Sudoku_Solver.py)
+
+38 [Count and Say](/38_Count_and_Say.md)
+
+39 [Combination Sum](/39_Combination_Sum.md)
 
 46 [Permutations](/46_Permutations.md)
 
