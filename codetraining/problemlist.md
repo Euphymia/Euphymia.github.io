@@ -30,7 +30,19 @@
 
 46 [Permutations](/46_Permutations.md)
 
+47 [Permutations II](./47_Permutations_II.md)
+
+48 [Rotate Image](./48_Rotate_Image.md)
+
 49 [Group Anagrams](/49_Group_Anagrams.md)
+
+51 [N-Queens](./51_N-Queens.md)
+
+53 [Maximum Subarray](./53_Maximum_Subarray.md)
+
+55 [Jump Game](./55_Jump_Game.md)
+
+58 [Length of Last Word](./58_Length_of_Last_Word.md)
 
 73 [Set Matrix Zeroes](/73_Set_Matrix_Zeroes.md)
 
@@ -80,7 +92,9 @@
 
 ###list
 
-2 [Add Two Numbers](/2_Add_Two_Numbers.md)
+05 [Create random List](./05_Create_random_List.md)
+
+2  [Add Two Numbers](/2_Add_Two_Numbers.md)
 
 19 [Remove Nth Node From End of List](/19_Remove_Nth_Node_From_End_of_List.md)
 
@@ -100,6 +114,10 @@
 
 ### Number
 
+03 [super prime](./03_super_prime.md)
+
+04 [Find Min Max](./04_Find_Min_Max.md)
+
 7 [Reverse Integer](/7_Reverse_Integer.md)
 
 9 [Palindrome_Number](/9_Palindrome_Number.md)
@@ -109,6 +127,10 @@
 17 [Letter Combinations of a Phone Number](/17_Letter_Combinations_of_a_Phone_Number.md)
 
 29 [Divide Two Integers](/29_Divide_Two_Integers.md)
+
+42 [Trapping Rain Water](./42_Trapping_Rain_Water.md)
+
+50 [Pow(x, n)](./50_Pow(x, n).md)
 
 70 [Climbing Stairs](/70_Climbing_Stairs.md)
 

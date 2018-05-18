@@ -7,6 +7,11 @@
 > * for循环的使用方法
 > * range() 的使用方法
 > * list 的使用方法
+> * 列表交换两个元素
+> * 列表append() 方法覆盖前面元素解决方法
+> * format的使用方法
+> * time.clock()的使用方法
+> * 间接修改字符串中字符的方法
 
 ---
 
@@ -191,3 +196,92 @@ Python包含以下方法:
 对原列表进行排序
 ```
 
+###python列表交换两个元素
+
+```python
+
+# python列表交换两个元素：
+
+nums[a], nums[b] = nums[b], nums[a]
+
+```
+
+###python.append() 方法覆盖前面元素解决方法
+
+```python
+
+先进行深拷贝
+
+import copy
+
+copy.deepcopy(a)
+
+再将a append到列表中即可
+
+```
+
+###format的使用方法
+
+```python
+python中format函数用于字符串的格式化
+通过关键字
+1 print('{名字}今天{动作}'.format(名字='陈某某', 动作='拍视频'))  # 通过关键字
+2 grade = {'name': '陈某某', 'fenshu': '59'}
+3 print('{name}电工考了{fenshu}'.format(**grade))  # 通过关键字，可用字典当关键字传入值时，在字典前加**即可
+通过位置
+1 print('{1}今天{0}'.format('拍视频', '陈某某'))  # 通过位置
+2 print('{0}今天{1}'.format('陈某某', '拍视频'))
+填充和对齐 ^ < > 分别表示居中、左对齐、右对齐，后面带宽度
+1 print('{:^14}'.format('陈某某'))
+2 print('{:>14}'.format('陈某某'))
+3 print('{:<14}'.format('陈某某'))
+4 print('{:*<14}'.format('陈某某'))
+5 print('{:&>14}'.format('陈某某'))  # 填充和对齐^<>分别表示居中、左对齐、右对齐，后面带宽度
+精度和类型f精度常和f一起使用
+1 print('{:.1f}'.format(4.234324525254))
+2 print('{:.4f}'.format(4.1))
+进制转化，b o d x 分别表示二、八、十、十六进制
+print('{:b}'.format(250))
+print('{:o}'.format(250))
+print('{:d}'.format(250))
+print('{:x}'.format(250))
+千分位分隔符，这种情况只针对与数字
+print('{:,}'.format(100000000))
+print('{:,}'.format(235445.234235))
+```
+
+###time.clock()的使用方法
+
+```
+Python time clock() 函数以浮点数计算的秒数返回当前的CPU时间。用来衡量不同程序的耗时，比time.time()更有用。
+
+这个需要注意，在不同的系统上含义不同。在UNIX系统上，它返回的是"进程时间"，它是用秒表示的浮点数（时间戳）。而在WINDOWS中，第一次调用，返回的是进程运行的实际时间。而第二次之后的调用是自第一次调用以后到现在的运行时间。（实际上是以WIN32上QueryPerformanceCounter()为基础，它比毫秒表示更为精确）
+```
+
+## 间接修改字符串中字符的方法
+
+```python
+方法一：将字符串转换为列表，修改列表的元素后，在重新连接为字符串:
+
+str1 = "string"
+str2 = list(str1)    #将字符串转换为列表，列表的每一个元素为一个字符
+str2[2] = 'x' 
+str2 = ''.join(str2)     #将列表重新连接为字符串
+print(str1,str2)
+>>>string stxing
+方法二：使用str.replace方法替换成我们想要的字符串，replace函数用法：str.replace(old, new, max)，是把字符串str中的所有old字符子串替换为new，max指定从左往右的最大替换次数，max可省略。
+
+str1 = "string"
+str2 = str1.replace(str1[2],'x')    #将字符串第三位替换为x
+print(str1,str2)
+>>>string stxing
+
+方法三：将字符串切片后相加：
+
+str1 = "string"
+str2 = str1[0:2]+'x'+str1[3:]   #先切后合
+print(str1,str2)
+>>>string stxing
+```
+
+​	

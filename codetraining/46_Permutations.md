@@ -5,6 +5,8 @@
 > * 问题
 > * 代码
 > * 思路
+> * python列表交换两个元素
+> * python.append() 方法覆盖前面元素解决方法
 
 ---
 
@@ -71,6 +73,52 @@ int main(){
 }
 ```
 
+```python
+import copy
+class Solution:
+    def permute(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[List[int]]
+        """
+        res=[]
+        self.permuteRecursive(nums,0,res)
+        return res
+    def permuteRecursive(self,nums,start,res):
+        if start==len(nums):
+            temp=copy.deepcopy(nums)
+            res.append(temp)
+            return
+        else:
+            for i in range(start,len(nums)):
+                nums[start],nums[i]=nums[i],nums[start]
+                self.permuteRecursive(nums,start+1,res)
+                nums[start],nums[i]=nums[i],nums[start]
+sl=Solution()
+nums=[1,2,3]
+res=[]
+res=sl.permute(nums)
+print(res)
+```
+
+
+
 ## 思路
 
 通过递归不停的交换nums数组的元素，知道全部交换过为止。
+
+## python列表交换两个元素
+
+python列表交换两个元素：
+
+nums[a], nums[b] = nums[b], nums[a]
+
+##python.append() 方法覆盖前面元素解决方法
+
+先进行深拷贝
+
+import copy
+
+copy.deepcopy(a)
+
+再将a append到列表中即可

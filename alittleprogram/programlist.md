@@ -11,6 +11,7 @@
 > * [Captcha recognition with python](/captcharecognitionwithpython/captcharecognitionwithpython.md)
 > * [Flappybird-qlearning with python](/flappybirdqlearning/flappybirdqlearning.md)
 > * [Identify the answer card with python](/identifyanswercardwithpython/identifyanswercard.md)
+> * [Copy files in flash disk](./copyfilesinflashdisk/copyfilesinflashdisk.md)
 
 ---
 
