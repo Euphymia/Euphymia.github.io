@@ -34,6 +34,8 @@
 * [Notes of matplotlib](/pythonmethods/matplotlib.md)
 * [Difference in append and extend](/pythonmethods/append和extend的区别.md)
 * [Notes of glob and os.path.join/splitext](/pythonmethods/globjoin和ospathjoinsplit.md)
+* [Note of os.environ](/pythonmethods/加载环境变量.md)
+* [Python advanced grammar](/pythonmethods/py高级.md)
 
 
 ### Learning Tensorflow
