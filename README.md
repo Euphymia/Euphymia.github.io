@@ -34,7 +34,12 @@
 * [Notes of matplotlib](/pythonmethods/matplotlib.md)
 * [Notes of list](/pythonmethods/list.md)
 * [Notes of glob and os.path.join/splitext](/pythonmethods/globjoin和ospathjoinsplit.md)
+<<<<<<< HEAD
 * [Notes of argparse](./pythonmethods/argparse.md)
+=======
+* [Note of os.environ](/pythonmethods/加载环境变量.md)
+* [Python advanced grammar](/pythonmethods/py高级.md)
+>>>>>>> 91bf7aa9244792ca801dfda1a9b4f2e4acc7ead9
 
 
 ### Learning Tensorflow
