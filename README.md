@@ -32,8 +32,9 @@
 * [Notes of pygame](/pythonmethods/pygamemethods.md)
 * [Regular Expression](/pythonmethods/正则表达式.md)
 * [Notes of matplotlib](/pythonmethods/matplotlib.md)
-* [Difference in append and extend](/pythonmethods/append和extend的区别.md)
+* [Notes of list](/pythonmethods/list.md)
 * [Notes of glob and os.path.join/splitext](/pythonmethods/globjoin和ospathjoinsplit.md)
+* [Notes of argparse](./pythonmethods/argparse.md)
 
 
 ### Learning Tensorflow

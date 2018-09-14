@@ -12,6 +12,7 @@
 > * [Flappybird-qlearning with python](/flappybirdqlearning/flappybirdqlearning.md)
 > * [Identify the answer card with python](/identifyanswercardwithpython/identifyanswercard.md)
 > * [Copy files in flash disk](./copyfilesinflashdisk/copyfilesinflashdisk.md)
+> * [Batch file name with google translate API](./Batchfilenamewithgoogletranslate/Batchfilenamewithgoogletranslate.md)
 
 ---
 

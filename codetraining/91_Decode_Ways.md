@@ -32,32 +32,26 @@
 
 ```C++
 #include <bits/stdc++.h>
-using namespace std;
 class Solution {
 public:
     int numDecodings(string s) {
-        int len=s.size();
-        if(len==0||s[0]=='0') return 0;
-        if(len==1) return 1;
-        int fn_1=1,fn_2=1,res=0;
-        for(int i=1;i<len;++i){
-            int temp=fn_1;
-            if(isValid(s[i])&&isValid(s[i-1],s[i])) res=fn_1+fn_2;
-            if(!isValid(s[i])&&isValid(s[i-1],s[i])) res=fn_2; 
-            if(isValid(s[i])&&!isValid(s[i-1],s[i])) res=fn_1;
-            if(!isValid(s[i])&&!isValid(s[i-1],s[i])) return 0;
-            fn_1=res;
-            fn_2=temp;
+        int n=s.size();
+        if(!n)  return 0;
+        int *dp = new int[n];
+        if(s[0] != '0')     dp[0] = 1;
+        else    dp[0] = 0;
+        for(int i = 1; i < n; i++){
+            dp[i] = 0;
+            if(s[i] != '0')     dp[i] += dp[i-1];
+            int tmp = (s[i-1] - '0') * 10 + s[i] - '0';
+            if(tmp >= 10 && tmp <= 26){
+                if(i >= 2)  dp[i] += dp[i-2];
+                else    dp[i]++;
+            }
         }
+        int res = dp[n-1];
+        delete [] dp;
         return res;
-    }
-    bool isValid(char a){
-        if(a=='0') return false;
-        return true;
-    }
-    bool isValid(char a,char b){
-        if(a=='1'||(a=='2'&&b<='6')) return true;
-        return false;
     }
 };
 int main(){

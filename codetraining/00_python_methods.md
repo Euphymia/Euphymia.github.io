@@ -12,6 +12,9 @@
 > * format的使用方法
 > * time.clock()的使用方法
 > * 间接修改字符串中字符的方法
+> * map()的使用方法
+> * python 中的三元表达式（三目运算符）
+> * python 中lambda()的用法
 
 ---
 
@@ -284,4 +287,73 @@ print(str1,str2)
 >>>string stxing
 ```
 
-​	
+### map()的使用方法
+
+```python
+描述
+map() 会根据提供的函数对指定序列做映射。
+
+第一个参数 function 以参数序列中的每一个元素调用 function 函数，返回包含每次 function 函数返回值的新列表。
+
+语法
+map() 函数语法：
+
+map(function, iterable, ...)
+参数
+function -- 函数，有两个参数
+iterable -- 一个或多个序列
+返回值
+Python 2.x 返回列表。
+
+Python 3.x 返回迭代器。
+
+实例
+以下实例展示了 map() 的使用方法：
+
+>>>def square(x) :            # 计算平方数
+...     return x ** 2
+... 
+>>> map(square, [1,2,3,4,5])   # 计算列表各个元素的平方
+[1, 4, 9, 16, 25]
+>>> map(lambda x: x ** 2, [1, 2, 3, 4, 5])  # 使用 lambda 匿名函数
+[1, 4, 9, 16, 25]
+ 
+# 提供了两个列表，对相同位置的列表数据进行相加
+>>> map(lambda x, y: x + y, [1, 3, 5, 7, 9], [2, 4, 6, 8, 10])
+[3, 7, 11, 15, 19]
+```
+
+### python 中的三元表达式（三目运算符）
+
+```python
+a = 1
+b = 2
+h = ""
+h = a-b if a>b else a+b
+print(h)
+```
+
+###python 中lambda()的用法
+
+```python
+在python中有一个匿名函数lambda，匿名函数顾名思义就是指：是指一类无需定义标识符（函数名）的函数或子程序。在C++11和C#中都有匿名函数的存在。下面看看在python中匿名函数的使用。
+
+1.lambda只是一个表达式，函数体比def简单很多。
+
+2.lambda的主体是一个表达式，而不是一个代码块。仅仅能在lambda表达式中封装有限的逻辑进去。
+
+3.lambda表达式是起到一个函数速写的作用。允许在代码内嵌入一个函数的定义。
+
+例1.定义一个lambda表达式，求三个数的和
+
+# -*- coding: UTF-8 -*-
+f = lambda x,y,z:x + y + z
+
+print f(1,2,3)
+print f(4,5,6)
+
+输出：
+6
+15
+```
+

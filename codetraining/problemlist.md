@@ -44,11 +44,17 @@
 
 58 [Length of Last Word](./58_Length_of_Last_Word.md)
 
+62 [Unique_Paths](/62_Unique_Paths.md)
+
+66 [Plus_One](/66_Plus_One.md)
+
 73 [Set Matrix Zeroes](/73_Set_Matrix_Zeroes.md)
 
 78 [Subsets](/78_Subsets.md)
 
 88 [Merge Sorted Array](/88_Merge_Sorted_Array.md)
+
+856 [Score_of_Parentheses](/856_Score_of_Parentheses.md)
 
 ### String
 
@@ -90,6 +96,8 @@
 
 131 [Palindrome Partitioning](/131_Palindrome_Partitioning.md)
 
+859 [Buddy_Strings](/859_Buddy_Strings.md)
+
 ###list
 
 05 [Create random List](./05_Create_random_List.md)
@@ -101,6 +109,8 @@
 21 [Merge_Two_Sorted_Lists](/21_Merge_Two_Sorted_Lists.md)
 
 23 [Merge k Sorted Lists](/23_Merge_k_Sorted_Lists.md)
+
+61 [Rotate_List](/61_Rotate_List.md)
 
 ### Tree
 
