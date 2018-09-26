@@ -52,11 +52,19 @@
 
 73 [Set Matrix Zeroes](/73_Set_Matrix_Zeroes.md)
 
+74 [Search_a_2D_Matrix](/74_Search_a_2D_Matrix.md)
+
+75 [Sort_Colors](/75_Sort_Colors.md)
+
 78 [Subsets](/78_Subsets.md)
 
 88 [Merge Sorted Array](/88_Merge_Sorted_Array.md)
 
 856 [Score_of_Parentheses](/856_Score_of_Parentheses.md)
+
+### DP
+
+64 [64_Minimum_Path_Sum](/64_Minimum_Path_Sum.md)
 
 ### String
 
@@ -87,6 +95,12 @@
 65 [Valid_Number](/65_Valid_Number.md)
 
 67 [Add Binary](/67_Add_Binary.md)
+
+68 [Text_Justification](/68_Text_Justification.md)
+
+71 [Simplify_Path](/71_Simplify_Path.md)
+
+76 [Minimum_Window_Substring](/76_Minimum_Window_Substring.md)
 
 79 [Word Search](/79_Word_Search.md)
 

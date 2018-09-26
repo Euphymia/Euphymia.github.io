@@ -15,6 +15,7 @@
 > * map()的使用方法
 > * python 中的三元表达式（三目运算符）
 > * python 中lambda()的用法
+> * Python高级数据结构-Collections模块
 
 ---
 
@@ -355,5 +356,167 @@ print f(4,5,6)
 输出：
 6
 15
+```
+
+### Python高级数据结构-Collections模块
+
+这个模块对上面的数据结构做了封装，增加了一些很酷的数据结构，比如：
+
+a）Counter： 计数器，用于统计元素的数量
+
+b）OrderDict：有序字典
+
+c）defaultdict：值带有默认类型的字典
+
+d）namedtuple：可命名元组，通过名字来访问元组元素
+
+e）deque :双向队列，队列头尾都可以放，也都可以取（与单向队列对比，单向队列只能一头放，另一头取）#
+
+```python
+#1. Counter
+#通过字典形式统计每个元素重复的次数传  
+res = collections.Counter('abcdabcaba')  
+print(res)                                  #结果Counter({'a': 4, 'b': 3, 'c': 2, 'd': 1})  
+  
+#dict的子类，所以也可以以字典的形式取得键值对  
+for k in res:  
+    print(k, res[k], end='  |  ')           #结果 a 4  |  b 3  |  c 2  |  d 1  |  
+for k, v in res.items():  
+    print(k, v, end='  |  ')                #结果 a 4  |  b 3  |  c 2  |  d 1  |  
+  
+#通过most_common(n)，返回前n个重复次数最多的键值对  
+print(res.most_common())                    #结果None  
+print(res.most_common(2))                   #结果[('a', 4), ('b', 3)]  
+  
+#通过update来增加元素的重复次数，通过subtract来减少元素重复的次数  
+a = collections.Counter('abcde')  
+res.update(a)  
+print(res)                                  #结果Counter({'a': 5, 'b': 4, 'c': 3, 'd': 2, 'e': 1})，比原来的res增加了重复次数  
+  
+b = collections.Counter('aaafff')  
+res.subtract(b)  
+print(res)                                  #结果Counter({'b': 4, 'c': 3, 'a': 2, 'd': 2, 'e': 1, 'f': -3})，还有负值，要注意  
+  
+#fromkeys功能还没实现，使用的话会报错
+2. OrderDict
+
+#有序字典，数据结构字典Dict是无序的，有时使用起来不是很方便，Collections里提供一个有序字典OrderDict，用起来就很方便了
+#在介绍有序字典以前，用已知的知识其实可以自己实现一个有序字典，通过列表或者元祖来维护key，实现有序字典：
+lst =[]
+dic = {}
+
+lst.append('name')
+dic['name'] = 'winter'
+lst.append('age')
+dic['age'] = 18
+
+for k in lst:
+    print(k, dic[k])
+#实例：
+
+#dict的方法OrderDict基本都可以使用，比如keys(), values(), clear()
+
+#注意，因为OrderDict有序，有些方法不同，比如，pop()和popitem()
+
+#另外OrderDict增加了一个move_to_end的方法
+#创建一个有序字典
+dic = collections.OrderedDict()
+dic['name'] = 'winter'
+dic['age'] = 18
+dic['gender'] = 'male'
+
+print(dic)                         #结果OrderedDict([('name', 'winter'), ('age', 18), ('gender', 'male')])
+
+#将一个键值对放入最后
+dic.move_to_end('name')
+print(dic)                         #结果OrderedDict([('age', 18), ('gender', 'male'), ('name', 'winter')])
+
+#3. defaultdict
+
+#默认字典，为字典设置一个默认类型；很有用，比如说：
+people = [['male', 'winter'], ['female', 'elly'], ['male', 'frank'], ['female', 'emma']]
+#将男性女性分开，所有男性放到'male'中，所有女性放放到'female'中
+gender_sort = {}
+
+for info in people:
+    if info[0] in gender_sort:
+        gender_sort[info[0]].append(info[1])
+    else:
+        gender_sort[info[0]] = [info[1]]
+
+print(gender_sort)                              #结果{'male': ['winter', 'frank'], 'female': ['elly', 'emma']}
+#如果使用defaultdict就会简单很多
+people = [['male', 'winter'], ['female', 'elly'], ['male', 'frank'], ['female', 'emma']]
+
+gender_sort = collections.defaultdict(list)
+for info in people:
+    gender_sort[info[0]].append(info[1])
+
+print(gender_sort)      #结果defaultdict(<class 'list'>, {'male': ['winter', 'frank'], 'female': ['elly', 'emma']})
+
+#4. namedtuple
+#可命名元组，给元组每个元素起一个名字，这样就可以通过名字来访问元组里的元素，增强了可读性；尤其对于坐标，html标签的长宽等，使用名字可读性更强；有点类似于字典了
+position_module = collections.namedtuple('position', ['x', 'y', 'z'])   #'position'相当于指定一个类型，类似于上面的OrderedDict([('age', 18), ('gender', 'male'), ('name', 'winter')])中的OrderdDict
+
+a_position = position_module(3, 5, 7)
+print(a_position)                                   #结果position(x=3, y=5, z=7)
+print(a_position.x, a_position.y, a_position.z)     #结果3 5 7
+import collections
+
+login_user = [
+    (r'http://www.baidu.com', 'usr1', 'pwd1'),
+    (r'http://www.youdao.com', 'usr2', 'pwd2'),
+    (r'http://mail.126.com', 'usr3', 'pwd3')
+]
+
+page_info = collections.namedtuple('login_info', ['url', 'username', 'password'])
+for user in login_user:
+    x = page_info(*user)
+    print(x)
+#结果：
+login_info(url='http://www.baidu.com', username='usr1', password='pwd1')
+login_info(url='http://www.youdao.com', username='usr2', password='pwd2')
+login_info(url='http://mail.126.com', username='usr3', password='pwd3')
+
+#5. deque
+
+#deque其实是 double-ended queue 的缩写，双向队列
+
+ #说到队列就要说到队列和栈了；队列是FIFO，栈是FILO
+
+#队列又分为：单向队列（只能从一边放，从另外一边取）；双向队列（两头都可以放，也都可以取）
+
+#Python中单向队列就是queue.Queue
+raw = [1,2,3]
+d = collections.deque(raw)
+print(d)                    #结果deque([1, 2, 3])
+
+#右增
+d.append(4)
+print(d)                    #结果deque([1, 2, 3, 4])
+#左增
+d.appendleft(0)
+print(d)                    #结果deque([0, 1, 2, 3, 4])
+
+#右扩展
+d.extend([5,6,7])
+print(d)                    #结果deque([0, 1, 2, 3, 4, 5, 6, 7])
+#左扩展
+d.extendleft([-3,-2,-1])
+print(d)                    #结果deque([-1, -2, -3, 0, 1, 2, 3, 4, 5, 6, 7])
+
+#右弹出
+r_pop = d.pop()
+print(r_pop)                #结果7
+print(d)                    #结果deque([-1, -2, -3, 0, 1, 2, 3, 4, 5, 6])
+#左弹出
+l_pop = d.popleft()
+print(l_pop)                #结果-1
+print(d)                    #结果deque([-2, -3, 0, 1, 2, 3, 4, 5, 6])
+
+#将右边n个元素值取出加入到左边
+print(d)                    #原队列deque([-2, -3, 0, 1, 2, 3, 4, 5, 6])
+d.rotate(3)
+print(d)                    #rotate以后为deque([4, 5, 6, -2, -3, 0, 1, 2, 3])
 ```
 
