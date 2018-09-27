@@ -10,6 +10,8 @@
 
 15 [Three Sum](/15_Three_Sum.md)
 
+26 [Remove_Duplicates_from_Sorted_Array](/26_Remove_Duplicates_from_Sorted_Array.md)
+
 27 [Remove Element](/27_Remove_Element.md)
 
 31 [Next Permutation](/31_Next_Permutation.md)
@@ -57,6 +59,8 @@
 75 [Sort_Colors](/75_Sort_Colors.md)
 
 78 [Subsets](/78_Subsets.md)
+
+80 [Remove_Duplicates_from_Sorted_Array_II](/80_Remove_Duplicates_from_Sorted_Array_II.md)
 
 88 [Merge Sorted Array](/88_Merge_Sorted_Array.md)
 
@@ -127,6 +131,10 @@
 23 [Merge k Sorted Lists](/23_Merge_k_Sorted_Lists.md)
 
 61 [Rotate_List](/61_Rotate_List.md)
+
+82 [Remove_Duplicates_from_Sorted_List_II](/82_Remove_Duplicates_from_Sorted_List_II.md)
+
+83 [Remove_Duplicates_from_Sorted_List](/83_Remove_Duplicates_from_Sorted_List.md)
 
 ### Tree
 
