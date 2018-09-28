@@ -62,6 +62,8 @@
 
 80 [Remove_Duplicates_from_Sorted_Array_II](/80_Remove_Duplicates_from_Sorted_Array_II.md)
 
+84 [Largest_Rectangle_in_Histogram](/84_Largest_Rectangle_in_Histogram.md)
+
 88 [Merge Sorted Array](/88_Merge_Sorted_Array.md)
 
 856 [Score_of_Parentheses](/856_Score_of_Parentheses.md)
