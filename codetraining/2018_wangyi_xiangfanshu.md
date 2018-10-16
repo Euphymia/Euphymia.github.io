@@ -48,3 +48,12 @@ int main(){
 }
 ```
 
+```python
+#python
+num=input()
+num1=int(num[::-1])
+num2=int(num)
+
+print(num1+num2)
+```
+

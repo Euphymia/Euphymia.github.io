@@ -55,3 +55,18 @@ int main(){
 }
 ```
 
+```python
+#python
+num=int(input())
+res=""
+while(num!=0):
+    if num%2!=0:
+        num=(num-1)/2
+        res=res+'1'
+    else:
+        num=(num-2)/2
+        res=res+'2'
+
+print(res[::-1])
+```
+

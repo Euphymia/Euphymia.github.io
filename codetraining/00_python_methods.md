@@ -16,6 +16,9 @@
 > * python 中的三元表达式（三目运算符）
 > * python 中lambda()的用法
 > * Python高级数据结构-Collections模块
+> * 字符串倒序
+> * 输出保留两位小数
+> *  remove，del，pop的区别 
 
 ---
 
@@ -518,5 +521,49 @@ print(d)                    #结果deque([-2, -3, 0, 1, 2, 3, 4, 5, 6])
 print(d)                    #原队列deque([-2, -3, 0, 1, 2, 3, 4, 5, 6])
 d.rotate(3)
 print(d)                    #rotate以后为deque([4, 5, 6, -2, -3, 0, 1, 2, 3])
+```
+
+### 字符串倒序
+
+```python
+res=res[::-1]
+```
+
+### 输出保留两位小数
+
+```python
+print('%0.2f' % (length_sum/count))
+```
+
+### remove，del，pop的区别 
+
+```python
+remove 是删除首个符合条件的元素。并不是删除特定的索引。
+>> > a = [0, 2, 2, 3]
+>> > a.remove(2)
+>> > a
+[0, 2, 3]
+而对于 del 来说，它是根据索引（元素所在位置）来删除的
+>> > a = [3, 2, 2, 1]
+>> > del a[1]
+[3, 2, 1]
+pop返回的是你弹出的那个数值
+>> > a = [4, 3, 5]
+>> > a.pop(1)
+3
+>> > a
+[4, 5]
+字符串与数组相互转换
+字符串转数组
+
+str = '1,2,3'
+arr = str.split(',')
+print a
+数组转字符串
+
+#方法1
+arr = ['a', 'b']
+str1 = ','.join(arr)
+print str1
 ```
 

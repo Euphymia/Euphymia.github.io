@@ -64,6 +64,8 @@
 
 84 [Largest_Rectangle_in_Histogram](/84_Largest_Rectangle_in_Histogram.md)
 
+85 [Maximal_Rectangle](/85_Maximal_Rectangle.md)
+
 88 [Merge Sorted Array](/88_Merge_Sorted_Array.md)
 
 856 [Score_of_Parentheses](/856_Score_of_Parentheses.md)
@@ -182,6 +184,12 @@
 
 ### Test questions
 
-[2018 wangyi mofabi](/2018_wangyi_mofabi.md)
+[2018 网易_魔法币](/2018_wangyi_mofabi.md)
 
-[2018 wangyi xiangfanshu](/2018_wangyi_xiangfanshu.md)
+[2018 网易 相反数](/2018_wangyi_xiangfanshu.md)
+
+[2018_ 网易_ 字符串碎片](/2018_wangyi_zifuchuansuipian.md)
+
+[2018_网易 _重排数列](/2018_wangyi_chongpaixulie.md)
+
+[2018_ 网易_ 最长公共子括号序列 ](/2018_wangyi_zuichanggonggongzikuohaoxulie.md)
