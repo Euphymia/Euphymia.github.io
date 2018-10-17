@@ -188,12 +188,12 @@
 
 ### Test questions
 
-[2018 网易_魔法币](/2018_wangyi_mofabi.md)
+[2018 网易 魔法币](/2018_wangyi_mofabi.md)
 
 [2018 网易 相反数](/2018_wangyi_xiangfanshu.md)
 
-[2018_ 网易_ 字符串碎片](/2018_wangyi_zifuchuansuipian.md)
+[2018 网易 字符串碎片](/2018_wangyi_zifuchuansuipian.md)
 
-[2018_网易 _重排数列](/2018_wangyi_chongpaixulie.md)
+[2018 网易 重排数列](/2018_wangyi_chongpaixulie.md)
 
-[2018_ 网易_ 最长公共子括号序列 ](/2018_wangyi_zuichanggonggongzikuohaoxulie.md)
+[2018 网易 最长公共子括号序列 ](/2018_wangyi_zuichanggonggongzikuohaoxulie.md)
