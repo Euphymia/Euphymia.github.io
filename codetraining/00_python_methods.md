@@ -7,6 +7,7 @@
 > * for循环的使用方法
 > * range() 的使用方法
 > * list 的使用方法
+> * 字典的使用方法
 > * 列表交换两个元素
 > * 列表append() 方法覆盖前面元素解决方法
 > * format的使用方法
@@ -18,7 +19,7 @@
 > * Python高级数据结构-Collections模块
 > * 字符串倒序
 > * 输出保留两位小数
-> *  remove，del，pop的区别 
+> * remove，del，pop的区别 
 
 ---
 
@@ -202,6 +203,143 @@ Python包含以下方法:
 9	list.sort([func])
 对原列表进行排序
 ```
+
+### 字典的使用方法
+
+```python
+####字典的定义 key: value
+
+info = {
+
+    'stu1001': "TengLan Wu",
+
+    'Stu1002': "Longze Loula",
+
+    'stu1103': "XiaoZe Maliya",
+
+}
+
+#####查询 字典的数据###############
+
+#####查询所有，但是字典是无序的
+
+print(info)
+
+ 
+
+#如果查询一个只需要查询对方的key
+
+print(info["stu1001"])
+
+ 
+
+#不报错方式查询（安全点）
+
+print(info.get("stu1001"))
+
+ 
+
+ 
+
+####### 修改######
+
+ 
+
+info["stu1001"] = "武藤兰"
+
+print(info)
+
+ 
+
+#########添加#########
+
+info["stu1004"] = "CangjingKong"
+
+print(info)
+
+ 
+
+########删除######## 两种方法
+
+#第一种
+
+#del info["stu1001"]
+
+print(info)
+
+ 
+
+#第二种
+
+info.pop("stu1103")
+
+print(info)
+
+ 
+
+#还有一个随机删除
+
+info.popitem()
+
+ 
+
+#判断字典里面存不存在这个key
+
+ 
+
+print('stu1005' in info)  # 有的话返回TRUE
+
+ 
+
+#查询所有的values
+
+print(info.values())
+
+ 
+
+#查询所有的key
+
+print(info.keys())
+
+ 
+
+字典的排序
+
+import operator
+
+dic = {'a': 1, 'f': 2, 'c': 3, 'h': 0}
+
+# 函数原型：sorted(dic,value,reverse)
+
+# 按字典中的键进行升序排序
+
+print("按键进行升序排序结果为:",
+
+        sorted(dic.items(), key=operator.itemgetter(0), reverse=False))
+
+# 按字典中的键进行降序排序
+
+print("按键进行降序排序结果为:",
+
+        sorted(dic.items(), key=operator.itemgetter(0), reverse=True))
+
+# 按字典中的值进行升序排序
+
+print("按值进行升序排序结果为:",
+
+        sorted(dic.items(), key=operator.itemgetter(1), reverse=False))
+
+# 按字典中的值进行降序排序
+
+print("按值进行降序排序结果为:",
+
+        sorted(dic.items(), key=operator.itemgetter(1), reverse=True))
+
+ 
+
+```
+
+
 
 ###python列表交换两个元素
 

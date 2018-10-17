@@ -70,6 +70,10 @@
 
 856 [Score_of_Parentheses](/856_Score_of_Parentheses.md)
 
+900 [RLE_Iterator](/900_RLE_Iterator.md)
+
+901 [Online_Stock _Span](/901_Online_Stock _Span.md)
+
 ### DP
 
 64 [64_Minimum_Path_Sum](/64_Minimum_Path_Sum.md)
