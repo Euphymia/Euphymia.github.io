@@ -78,6 +78,8 @@
 
 64 [64_Minimum_Path_Sum](/64_Minimum_Path_Sum.md)
 
+903 [Valid_Permutations_for_DI_Sequence](/903_Valid_Permutations_for_DI_Sequence.md)
+
 ### String
 
 01 [manacher](/01_manacher.md)
@@ -179,6 +181,8 @@
 69 [Sqrt(x)](/69_Sqrt(x).md)
 
 77 [Combinations](/77_Combinations.md)
+
+902 [Numbers_At_Most_N_Given_Digit_Set](/902_Numbers_At_Most_N_Given_Digit_Set.md)
 
 ###Other
 

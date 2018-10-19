@@ -20,6 +20,7 @@
 > * 字符串倒序
 > * 输出保留两位小数
 > * remove，del，pop的区别 
+> * 找出list中某元素的所有下标
 
 ---
 
@@ -703,5 +704,11 @@ print a
 arr = ['a', 'b']
 str1 = ','.join(arr)
 print str1
+```
+
+### 找出list中某元素的所有下标
+
+```python
+max_indexs=[i for i, x in enumerate(a) if x == max_a]
 ```
 
