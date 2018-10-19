@@ -70,9 +70,19 @@
 
 856 [Score_of_Parentheses](/856_Score_of_Parentheses.md)
 
+896 [Monotonic_Array](/896_Monotonic_Array.md)
+
 900 [RLE_Iterator](/900_RLE_Iterator.md)
 
 901 [Online_Stock _Span](/901_Online_Stock _Span.md)
+
+904 [Fruit_Into_Baskets](/904_Fruit_Into_Baskets.md)
+
+905 [Sort_Array_By_Parity](/905_Sort_Array_By_Parity.md)
+
+907 [Sum_of_Subarray_Minimums](/907_Sum_of_Subarray_Minimums.md)
+
+908 [Smallest_Range_I](/908_Smallest_Range_I.md)
 
 ### DP
 
@@ -183,6 +193,8 @@
 77 [Combinations](/77_Combinations.md)
 
 902 [Numbers_At_Most_N_Given_Digit_Set](/902_Numbers_At_Most_N_Given_Digit_Set.md)
+
+906 [Super_Palindromes](/906_Super_Palindromes.md)
 
 ###Other
 
