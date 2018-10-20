@@ -112,6 +112,37 @@ int main()
 }
 ```
 
+```python
+#python
+import collections
+
+class Solution:
+    def levelOrder(self, root):
+        """
+        :type root: TreeNode
+        :rtype: List[List[int]]
+        """
+        if not root:
+            return []
+        Q = collections.deque([root])
+        res = []
+        while Q:
+            rec = []  # record all node in the same level
+            l = len(Q)
+            for i in range(l):
+                node = Q.popleft()
+                rec.append(node.val)
+                if node.left:
+                    Q.append(node.left)
+                if node.right:
+                    Q.append(node.right)
+            # 循环结束rec正好储存了该层的所有节点
+            res.append(rec)
+        return res
+```
+
+
+
 ## 思路
 
 层序遍历二叉树是典型的广度优先搜索BFS的应用，但是这里稍微复杂一点的是，我们要把各个层的数分开，存到一个二维向量里面，大体思路还是基本相同的，建立一个queue，然后先把根节点放进去，这时候找根节点的左右两个子节点，这时候去掉根节点，此时queue里的元素就是下一层的所有节点，用一个for循环遍历它们，然后存到一个一维向量里，遍历完之后再把这个一维向量存到二维向量里，以此类推，可以完成层序遍历。

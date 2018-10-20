@@ -90,6 +90,16 @@
 
 903 [Valid_Permutations_for_DI_Sequence](/903_Valid_Permutations_for_DI_Sequence.md)
 
+### DFS
+
+102 [Binary_Tree_Level_Order_Traversal](/102_Binary_Tree_Level_Order_Traversal_bfs.md)
+
+103 [Binary_Tree_Zigzag_Level_Order_Traversal](/103_Binary_Tree_Zigzag_Level_Order_Traversal.md)
+
+107 [Binary_Tree_Level_Order_Traversal_II](/107_Binary_Tree_Level_Order_Traversal_II.md)
+
+542 [01_Matrix](/542_01_Matrix.md)
+
 ### String
 
 01 [manacher](/01_manacher.md)
