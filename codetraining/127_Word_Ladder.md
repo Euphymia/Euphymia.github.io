@@ -81,6 +81,55 @@ int main()
 }
 ```
 
+```python
+#python
+import collections
+class Solution:
+    def ladderLength(self, beginWord, endWord, wordList):
+        """
+        :type beginWord: str
+        :type endWord: str
+        :type wordList: List[str]
+        :rtype: int
+        """
+        dic=collections.defaultdict(list)
+        # dic={}
+        for i in wordList:
+            for j in range(len(i)):
+                temp=list(i)
+                temp[j]='_'
+                a="".join(temp)
+                dic[a].append(i)
+        wordset=[beginWord]
+        que=collections.deque()
+        que.append(beginWord)
+        res=1
+        while que:
+            l=len(que)
+            for i in range(l):
+                s=que.popleft()
+                for j in range(len(s)):
+                    temp = list(s)
+                    temp[j] = '_'
+                    a = "".join(temp)
+                    if s==endWord:
+                        return res
+                    if a in dic.keys():
+                        for m in dic[a]:
+                            if m in wordset:
+                                continue
+                            else:
+                                que.append(m)
+                                wordset.append(m)
+            res+=1
+        return 0
+
+if __name__=="__main__":
+    sl=Solution()
+    print(sl.ladderLength("hit", "cog", ["hot", "dot", "dog", "lot", "log", "cog"]))
+
+```
+
 ## 具体思路
 
 思路：

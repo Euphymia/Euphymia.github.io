@@ -84,6 +84,16 @@
 
 908 [Smallest_Range_I](/908_Smallest_Range_I.md)
 
+910 [Smallest_Range_II](/910_Smallest_Range_II.md)
+
+911 [Online_Election](/911_Online_Election.md)
+
+914 [X_of_a_Kind_in_a_Deck_of_Cards](/914_X_of_a_Kind_in_a_Deck_of_Cards.md)
+
+915 [Partition_Array_into_Disjoint_Intervals](/915_Partition_Array_into_Disjoint_Intervals.md)
+
+916 [Word_Subsets](/916_Word_Subsets.md)
+
 ### DP
 
 64 [64_Minimum_Path_Sum](/64_Minimum_Path_Sum.md)
@@ -98,7 +108,13 @@
 
 107 [Binary_Tree_Level_Order_Traversal_II](/107_Binary_Tree_Level_Order_Traversal_II.md)
 
+127 [Word Ladder](/127_Word_Ladder.md)
+
+279 [Perfect_Squares](/279_Perfect_Squares.md)
+
 542 [01_Matrix](/542_01_Matrix.md)
+
+909 [Snakes_and_Ladders](/909_Snakes_and_Ladders.md)
 
 ### String
 
@@ -141,8 +157,6 @@
 91 [Decode Ways](/91_Decode_Ways.md)
 
 125 [Valid Palindrome](/125_Valid_Palindrome.md)
-
-127 [Word Ladder](/127_Word_Ladder.md)
 
 131 [Palindrome Partitioning](/131_Palindrome_Partitioning.md)
 

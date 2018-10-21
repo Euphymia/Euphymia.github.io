@@ -20,7 +20,8 @@
 > * 字符串倒序
 > * 输出保留两位小数
 > * remove，del，pop的区别 
-> * 找出list中某元素的所有下标
+> * 找出list中某元素的存在所有位置 
+> * bisect二分查找
 
 ---
 
@@ -227,6 +228,28 @@ info = {
 print(info)
 
  
+#字典的初始化：
+    Python可以在创建字典的时候初始化字典
+>> > info = {"name": 'cold'}
+>> > info = dict(name='cold')       # 更优雅
+#很明显第二种方法更加的优雅和减少一些特殊字符的输入, 但是有种情况第二种不能胜任
+
+>> > key = 'name'
+>> > info = {key: 'cold'}  # {'name':'cold'}
+>> > info = dict(key='cold')  # {'key': 'cold'}
+#明显第二种方法就会引发一个不容易找到的bug
+
+#Python字典还有一种初始化方式, 就是使用字典的fromkeys方法可以从列表中获取元素作为键并用None或fromkeys方法的第二个参数初始化
+
+>> > info = {}.fromkeys(['name', 'blog'])
+>> > info
+{'blog': None, 'name': None}
+>> > info = dict().fromkeys(['name', 'blog'])
+>> > info
+{'blog': None, 'name': None}
+>> > info = dict().fromkeys(['name', 'blog'], 'linuxzen.com')
+>> > info
+{'blog': 'linuxzen.com', 'name': 'linuxzen.com'}
 
 #如果查询一个只需要查询对方的key
 
@@ -264,7 +287,7 @@ print(info)
 
 #第一种
 
-#del info["stu1001"]
+del info["stu1001"]
 
 print(info)
 
@@ -278,7 +301,7 @@ print(info)
 
  
 
-#还有一个随机删除
+#还有一个随机删除,为什么是随机删除呢？因为字典是无序的，没有所谓的“最后一项”或是其它顺序。在工作时如果遇到需要逐一删除项的工作，用popitem()方法效率很高。
 
 info.popitem()
 
@@ -709,6 +732,28 @@ print str1
 ### 找出list中某元素的所有下标
 
 ```python
-max_indexs=[i for i, x in enumerate(a) if x == max_a]
+idxs = [idx for idx, e in enumerate(A) if e == 1]
+```
+
+###bisect二分查找
+
+```python
+bisect二分查找
+Python 的列表（list）内部实现是一个数组，也就是一个线性表。在列表中查找元素可以使用 list.index() 方法，其时间复杂度为O(n)。对于大数据量，
+则可以用二分查找进行优化。二分查找要求对象必须有序，其基本原理如下：
+
+1.从数组的中间元素开始，如果中间元素正好是要查找的元素，则搜素过程结束；
+2.如果某一特定元素大于或者小于中间元素，则在数组大于或小于中间元素的那一半中查找，而且跟开始一样从中间元素开始比较。
+3.如果在某一步骤数组为空，则代表找不到。
+二分查找也成为折半查找，算法每一次比较都使搜索范围缩小一半， 其时间复杂度为 O(logn)。
+bisect.bisect_left(a, x, lo=0, hi=len(a)):
+查找在有序列表 a 中插入 x 的index。lo 和 hi 用于指定列表的区间，默认是使用整个列表。如果 x 已经存在，在其左边插入。返回值为 index。
+
+bisect返回你要插入的数据的位置
+bisect_left 该函数用入处理将会插入重复数值的情况，返回将会插入的位置,
+bisect_right 该函数用入处理将会插入重复数值的情况，返回将会插入的位置
+insort 插入 在不改变原有数据的情况下插入到重复值的右边
+insort_left 插入到重复值的左边
+insort_right 插入到重复值的右边
 ```
 
