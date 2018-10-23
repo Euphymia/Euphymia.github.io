@@ -162,6 +162,10 @@
 
 859 [Buddy_Strings](/859_Buddy_Strings.md)
 
+925 [Long_Pressed_Name](/925_Long_Pressed_Name.md)
+
+926 [Flip_String_to_Monotone_Increasing](/926_Flip_String_to_Monotone_Increasing.md)
+
 ###list
 
 05 [Create random List](./05_Create_random_List.md)
