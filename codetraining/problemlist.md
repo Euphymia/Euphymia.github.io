@@ -94,11 +94,29 @@
 
 916 [Word_Subsets](/916_Word_Subsets.md)
 
+922 [Sort_Array_By_Parity_II](/922_Sort_Array_By_Parity_II.md)
+
+923 [3Sum_With_Multiplicity](/923_3Sum_With_Multiplicity.md)
+
+930 [Binary_Subarrays_With_Sum](/930_Binary_Subarrays_With_Sum.md)
+
+932 [Beautiful_Array](/932_Beautiful_Array.md)
+
+933 [Number_of_Recent_Calls](/933_Number_of_Recent_Calls.md)
+
+935 [Knight_Dialer](/935_Knight_Dialer.md)
+
+937 [Reorder_Log_Files](/937_Reorder_Log_Files.md)
+
+939 [Minimum_Area_Rectangle](/939_Minimum_Area_Rectangle.md)
+
 ### DP
 
 64 [64_Minimum_Path_Sum](/64_Minimum_Path_Sum.md)
 
 903 [Valid_Permutations_for_DI_Sequence](/903_Valid_Permutations_for_DI_Sequence.md)
+
+931 [Minimum_Falling_Path_Sum](/931_Minimum_Falling_Path_Sum.md)
 
 ### DFS
 
@@ -115,6 +133,10 @@
 542 [01_Matrix](/542_01_Matrix.md)
 
 909 [Snakes_and_Ladders](/909_Snakes_and_Ladders.md)
+
+934 [Shortest_Bridge](/934_Shortest_Bridge.md)
+
+937 [Reorder_Log_Files](/937_Reorder_Log_Files.md)
 
 ### String
 
@@ -162,9 +184,15 @@
 
 859 [Buddy_Strings](/859_Buddy_Strings.md)
 
+921 [Minimum_Add_to_Make_Parentheses_Valid](/921_Minimum_Add_to_Make_Parentheses_Valid.md)
+
 925 [Long_Pressed_Name](/925_Long_Pressed_Name.md)
 
 926 [Flip_String_to_Monotone_Increasing](/926_Flip_String_to_Monotone_Increasing.md)
+
+929 [Unique_Email_Addresses](/929_Unique_Email_Addresses.md)
+
+940 [Distinct_Subsequences_II](/940_Distinct_Subsequences_II.md)
 
 ###list
 
@@ -193,6 +221,8 @@
 102 [Binary Tree Level Order Traversal](/102_Binary_Tree_Level_Order_Traversal.md)
 
 129 [Sum Root to Leaf Numbers](/129_Sum_Root_to_Leaf_Numbers.md)
+
+938 [Range_Sum_of_BST](/938_Range_Sum_of_BST.md)
 
 ### Number
 
