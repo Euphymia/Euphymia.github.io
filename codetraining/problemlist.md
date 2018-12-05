@@ -68,6 +68,12 @@
 
 88 [Merge Sorted Array](/88_Merge_Sorted_Array.md)
 
+115 [Distinct_Subsequences](/115_Distinct_Subsequences.md)
+
+118 [Pascals_Triangle](/118_Pascals_Triangle.md)
+
+119 [Pascals_Triangle_II](/119_Pascals_Triangle_II.md)
+
 856 [Score_of_Parentheses](/856_Score_of_Parentheses.md)
 
 896 [Monotonic_Array](/896_Monotonic_Array.md)
@@ -114,6 +120,8 @@
 
 64 [64_Minimum_Path_Sum](/64_Minimum_Path_Sum.md)
 
+120 [Triangle](/120_Triangle.md)
+
 903 [Valid_Permutations_for_DI_Sequence](/903_Valid_Permutations_for_DI_Sequence.md)
 
 931 [Minimum_Falling_Path_Sum](/931_Minimum_Falling_Path_Sum.md)
@@ -128,8 +136,6 @@
 
 127 [Word Ladder](/127_Word_Ladder.md)
 
-279 [Perfect_Squares](/279_Perfect_Squares.md)
-
 542 [01_Matrix](/542_01_Matrix.md)
 
 909 [Snakes_and_Ladders](/909_Snakes_and_Ladders.md)
@@ -137,6 +143,10 @@
 934 [Shortest_Bridge](/934_Shortest_Bridge.md)
 
 937 [Reorder_Log_Files](/937_Reorder_Log_Files.md)
+
+### BFS
+
+279 [Perfect_Squares](/279_Perfect_Squares.md)
 
 ### String
 
