@@ -74,6 +74,12 @@
 
 119 [Pascals_Triangle_II](/119_Pascals_Triangle_II.md)
 
+121 [Best_Time_to_Buy_and_Sell_Stock](/121_Best_Time_to_Buy_and_Sell_Stock.md)
+
+122 [Best_Time_to_Buy_and_Sell_Stock_II](/122_Best_Time_to_Buy_and_Sell_Stock_II.md)
+
+123 [Best_Time_to_Buy_and_Sell_Stock_III](/123_Best_Time_to_Buy_and_Sell_Stock_III.md)
+
 856 [Score_of_Parentheses](/856_Score_of_Parentheses.md)
 
 896 [Monotonic_Array](/896_Monotonic_Array.md)
@@ -116,6 +122,12 @@
 
 939 [Minimum_Area_Rectangle](/939_Minimum_Area_Rectangle.md)
 
+941 [Valid_Mountain_Array](/941_Valid_Mountain_Array.md)
+
+942 [DI_String_Match](/942_DI_String_Match.md)
+
+944 [Delete_Columns_to_Make_Sorted](/944_Delete_Columns_to_Make_Sorted.md)
+
 ### DP
 
 64 [64_Minimum_Path_Sum](/64_Minimum_Path_Sum.md)
@@ -134,6 +146,8 @@
 
 107 [Binary_Tree_Level_Order_Traversal_II](/107_Binary_Tree_Level_Order_Traversal_II.md)
 
+126 [Word_Ladder_II](/126_Word_Ladder_II.md)
+
 127 [Word Ladder](/127_Word_Ladder.md)
 
 542 [01_Matrix](/542_01_Matrix.md)
@@ -143,6 +157,8 @@
 934 [Shortest_Bridge](/934_Shortest_Bridge.md)
 
 937 [Reorder_Log_Files](/937_Reorder_Log_Files.md)
+
+943 [Find_the_Shortest_Superstring](/943_Find_the_Shortest_Superstring.md)
 
 ### BFS
 
