@@ -1,4 +1,10 @@
 # WELCOME TO MY NOTE
+## *[For competition](/forcompetition/competitionlist.md)*
+
+## *[Code Training](/codetraining/problemlist.md)*
+
+## *[My Enjoy](/alittleprogram/programlist.md)*
+
 ## CONTENT                                   
 
 ### *Machine Learning Algorithm*
@@ -10,6 +16,7 @@
 
 * [Classifying spam email with naïve Bayes](/MLinaction/使用朴素贝叶斯方法对垃圾邮件进行分类.md)
 * [Mult label classification with svm and k-fold CrossValidation](/MLinaction/svm多分类及K折交叉验证.md)
+* [Classifier_comparison](/MLinaction/Classifier_comparison.md)
 
 ### Machine Learning Methods
 
@@ -58,10 +65,3 @@
 - [Part of speech in nltk](/naturelanguageprocessing/英语单词词性.md)
 - [Standardized text with nltk](/naturelanguageprocessing/nltk标准化.md)
 - [morphology and part of speech tagging with nltk](/naturelanguageprocessing/nltk形态学与词性标注.md)
-
-## *[For competition](/forcompetition/competitionlist.md)*
-
-## *[Code Training](/codetraining/problemlist.md)*
-
-##  *[Can't  see me](/alittleprogram/programlist.md)*
-
