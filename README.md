@@ -1,6 +1,4 @@
 # WELCOME TO MY NOTE
-## *[For competition](/Forcompetition/competitionlist.md)*
-
 ## *[Code Training](/codetraining/problemlist.md)*
 
 ## *[My Enjoy](/alittleprogram/programlist.md)*
@@ -65,3 +63,5 @@
 - [Part of speech in nltk](/naturelanguageprocessing/英语单词词性.md)
 - [Standardized text with nltk](/naturelanguageprocessing/nltk标准化.md)
 - [morphology and part of speech tagging with nltk](/naturelanguageprocessing/nltk形态学与词性标注.md)
+
+*[For competition](/Forcompetition/competitionlist.md)*
