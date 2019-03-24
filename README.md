@@ -1,5 +1,5 @@
 # WELCOME TO MY NOTE
-## *[For competition](/forcompetition/competitionlist.md)*
+## *[For competition](/Forcompetition/competitionlist.md)*
 
 ## *[Code Training](/codetraining/problemlist.md)*
 
