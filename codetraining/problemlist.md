@@ -128,6 +128,8 @@
 
 944 [Delete_Columns_to_Make_Sorted](/944_Delete_Columns_to_Make_Sorted.md)
 
+1021 [Best_Sightseeing_Pair](./1021_Best_Sightseeing_Pair.md)
+
 ### DP
 
 64 [64_Minimum_Path_Sum](/64_Minimum_Path_Sum.md)
