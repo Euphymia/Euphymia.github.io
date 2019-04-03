@@ -288,7 +288,7 @@
 
 57 [Insert Interval](/57_Insert_Interval.md)
 
-### Test questions
+### True questions
 
 [2018 网易 魔法币](/2018_wangyi_mofabi.md)
 
